@@ -14,10 +14,9 @@ Die Schüler schreiben ein GitBook in **Markdown**.
 Das Layout passen sie durch Code in einem **CSS** an.
 Als besonderes Schmankerls schreiben sie mathematische Formeln in **LaTeX**-Code.
 [Cheatsheet zur Markdown-Syntax](http://help.gitbook.com/format/markdown.html)
+[LaTeX-Mathematische Zeichen](https://de.wikipedia.org/wiki/Liste_mathematischer_Symbole#Gleichheitszeichen)
 [LaTeX-Code](http://www.artofproblemsolving.com/wiki/index.php?title=LaTeX:Commands)
 [LaTeX-Symbole](http://www.artofproblemsolving.com/wiki/index.php?title=LaTeX:Symbols)
-
-[GitBook - Erste Stunde]
 
 Die ```website.css``` bearbeiten die Schüler mit Hilfe des Add-Ons **Firebug**.
 1. Sie suchen damit wo sie etwas verändern können.
@@ -25,8 +24,9 @@ Die ```website.css``` bearbeiten die Schüler mit Hilfe des Add-Ons **Firebug**.
 1. Sie kopieren den Code in die ```website.css```.
 
 ### Lehrer-Material
-[Anleitung zu GitBook für Lehrer]()
-[Anleitung zu GitBook für Schüler]()
+* [Anleitung zu GitBook für Lehrer](GitBook_Anleitung_fuer_Lehrer.md)
+* In's GitBook stellen: [Anleitung zu GitBook für Schüler](GitBook_Anleitung_fuer_Schueler.md)
+[GitBook - HO Erste Stunde](GitBook_HO_Erste_Stunde.md)
 
 ## Mögliche Exkurse
 * Die Schüler verwenden **GitHub**. [GitHub - Erste Schritte](https://thomas-leister.de/allgemein/github-fuer-anfaenger-repository-anlegen-und-code-hochladen/)
