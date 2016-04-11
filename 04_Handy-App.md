@@ -1,9 +1,13 @@
 Handy-App
 ========
+*Das ganze hier ist noch unausgereift.*
+
+Gute Tutorials um programmieren zu lernen, gibt's auf [codecademy](https://www.codecademy.com/).
+
 
 ## Theorie
 
-* Programmiersprachen [Ranking](http://3g2upl4pq6kufc4m.onion/?q=github+language+ranking)
+* Programmiersprachen [Ranking](http://redmonk.com/sogrady/2016/02/19/language-rankings-1-16/)
 * Zusammenspiel verschiedener Sprachen [mind42 WebApp](http://mind42.com/public/66aeea65-d54d-4f87-a37a-8eb6f7f0fc0f)
 
 ## Programmier-Möglichkeiten
@@ -41,7 +45,7 @@ Kompilieren einer WebApp zur nativen App mit PhoneGap oder [Apparatio](http://ap
 #### Baukästen
 Zum Einstieg kann das Programmieren nach dem Baukasten-Prinzip auf [code.org](https://studio.code.org/s/20-hour) geübt werden.
 
-* [AppInventor](http://appinventor.mit.edu/explore/) [1](http://appinventor.mit.edu/explore/) [2](http://schuelerlabor.informatik.rwth-aachen.de/sites/default/files/materialien/1%20-%20App%20geht%C2%B4s!.pdf) 
+* [AppInventor](http://appinventor.mit.edu/explore/) ([RWTH](http://schuelerlabor.informatik.rwth-aachen.de/sites/default/files/materialien/1%20-%20App%20geht%C2%B4s!.pdf))
 * [AppYourself](http://appyourself.net/de) 
 * [iBuildApp](http://ibuildapp.com/)
 * [appTITAN](http://www.apptitan.de/de/)
@@ -60,4 +64,3 @@ Zum Einstieg kann das Programmieren nach dem Baukasten-Prinzip auf [code.org](ht
 	* [Newsreader](https://www.androidpit.de/android-entwickler-studio-erste-app#)
 	* [Java ist auch eine Insel](http://www.amazon.de/Java-auch-eine-Insel-Programmieren/dp/3898427471)
 
-Gute Tutorials um programmieren zu lernen gibts auf [codecademy](https://www.codecademy.com/).

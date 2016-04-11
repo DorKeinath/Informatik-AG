@@ -9,4 +9,6 @@
 * [SonicPi](06_SonicPi.md)
 * [RaspberryPi](07_RPi.md)
 
-* [Projekte](http://xcosx.de/mgb/keineph-slides/slides/Informatik%20-%20Projekte2016.md.html)
+Präsentationen
+
+*  [Projekte nach HTML](http://xcosx.de/mgb/keineph-slides/slides/Informatik%20-%20Projekte2016.md.html)
