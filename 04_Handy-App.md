@@ -63,4 +63,6 @@ Zum Einstieg kann das Programmieren nach dem Baukasten-Prinzip auf [code.org](ht
 * [AndroidStudio](https://developer.android.com/sdk/index.html)
 	* [Newsreader](https://www.androidpit.de/android-entwickler-studio-erste-app#)
 	* [Java ist auch eine Insel](http://www.amazon.de/Java-auch-eine-Insel-Programmieren/dp/3898427471)
+	
+	* Interessant könnten zum einfachen Start auch die [Entwicklerpakete von RedHat](http://m.heise.de/meldung/Red-Hat-aktualisiert-Entwicklerpakete-2621593.html) sein.
 

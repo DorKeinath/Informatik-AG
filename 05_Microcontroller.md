@@ -4,7 +4,9 @@
 ![Festool](files/festool.jpg)
 
 ## Erste Schritte
-* Programm erstellen. Bausteine ins Arbeitsfenster ziehen, miteinander verbinden.
+* Programm **EasyKitProgrammierung - EasyLab Starter** starten.
+* Unten rechts bei "Hinzufügen" das *Mini Base Board* hinzufügen.
+* Bausteine ins Arbeitsfenster ziehen und miteinander verbinden, z. B. einen Joystick und eine LED.
 * In den **Code-Erzeugungsmodus** wechseln.
 * Bei Codeerzeugung **EasyKit Mini (Standalone)** auswählen.
 

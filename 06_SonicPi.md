@@ -13,5 +13,6 @@ Man kann mit SonicPi auch **Minecraft** programmieren: Seite 29 und 53.
 
 ## Erste Schritte
 
+* Wenn der Kopfhörer nicht funktioniert, das Programm neu starten, während die Kopfhörer bereits eingesteckt sind.
 * Im Programm selbst sind Anleitungen und Beispiel-Code vorhanden.
 * [Anleitung Essentials als pdf](https://www.raspberrypi.org/magpi/issues/essentials-sonic-pi-v1/)
