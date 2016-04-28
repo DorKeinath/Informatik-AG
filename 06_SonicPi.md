@@ -24,7 +24,8 @@ Man kann mit SonicPi auch **Minecraft** programmieren: Seite 29 und 53 in der [A
 * In den neueren Versionen gibt's die Anleitungen auf Deutsch.
 * Der “Ausführen“-Button ist der Run-Button.
 * Mit einem “freien Buffer“ ist ein Workspace gemeint.
-*  Mit Strg+Mausrad kannst du den Code kleiner darstellen lassen.
+* Mit Strg+Mausrad kannst du den Code kleiner darstellen lassen.
+* Als erste Komposition dient vielleicht eine [einfache Melodie](http://www.kinderlieder-noten.de/pdf_noten.html)?
 
 ## Weitere Tutorials
 
