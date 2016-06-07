@@ -13,9 +13,12 @@ Das Kompilieren funktioniert mittels JavaScript z.B. mit [markdown-styles](https
 Die Schüler schreiben ein GitBook in **Markdown**.
 Das Layout passen sie durch Code in einem **CSS** an.
 Als besonderes Schmankerls schreiben sie mathematische Formeln in **LaTeX**-Code.
-[Cheatsheet zur Markdown-Syntax](http://help.gitbook.com/format/markdown.html)
+[Cheatsheet zur Markdown-Syntax](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
 [LaTeX-Mathematische Zeichen](https://de.wikipedia.org/wiki/Liste_mathematischer_Symbole#Gleichheitszeichen)
+
 [LaTeX-Code](http://www.artofproblemsolving.com/wiki/index.php?title=LaTeX:Commands)
+
 [LaTeX-Symbole](http://www.artofproblemsolving.com/wiki/index.php?title=LaTeX:Symbols)
 
 Die ```website.css``` bearbeiten die Schüler mit Hilfe des Add-Ons **Firebug**.

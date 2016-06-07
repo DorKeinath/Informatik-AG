@@ -4,3 +4,7 @@
 * Vorteile: https://valasprache.wordpress.com/
 
 https://de.wikipedia.org/wiki/Haskell_%28Programmiersprache%29#Implementierungen
+
+## Link-Liste zu Tutorials für viele Programmiersprachen
+
+https://wiki.ubuntuusers.de/Links/Programmierung/
