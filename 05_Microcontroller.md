@@ -1,5 +1,5 @@
-# Microcontroller von Festool
-*Die Schüler programmieren einen Microcontroller von Festool.*
+# Microcontroller von Festo
+*Die Schüler programmieren einen Microcontroller, der von Firma digiraster GmbH in Stuttgart entwickelt und der Schule von der Hopp-Foundation gesponsert wurde.*
 
 ![Festool](files/festool.jpg)
 
@@ -43,8 +43,3 @@
  * Minuspol schwarz (ground)
  * Pluspol in den richtigen Pin
  * Unter Tools den Port ändern (nicht 6)
- 
- ## Aufgaben
- 
- 1. Motor vor und zurück
- 

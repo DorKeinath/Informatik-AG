@@ -26,6 +26,7 @@ Man kann mit SonicPi auch **Minecraft** programmieren: Seite 29 und 53 in der [A
 * Mit einem “freien Buffer“ ist ein Workspace gemeint.
 * Mit Strg+Mausrad kannst du den Code kleiner darstellen lassen.
 * Als erste Komposition dient vielleicht eine [einfache Melodie](http://www.kinderlieder-noten.de/pdf_noten.html)?
+* Das Speichern funktioniert nicht immer reibungslos, deswegen solltest du deinen Quellcode in einer Text-Datei z.B. in deinen eigenen Dateien speichern.
 
 ## Weitere Tutorials
 
