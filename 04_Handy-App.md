@@ -4,7 +4,9 @@ Bevor man eine Handy-App schreibt, muss man sich für einen der zu vielen Wege e
 
 Nun zu meiner Einschätzung: Ich denke, dass in naher Zukunft Browser-Apps zunehmen werden, da Browser sich als Schnittstelle zwischen Internet und Handy dazu anbieten. Über den Browser kann dann mit den Geräten des Handys gesprochen werden. Das ist m.E. aber auch der kritische Punkt, wieso das Rennen vielleicht doch besser von nativen Apps gewonnen werden sollte: unsere Browserabhängigkeit (Mozillas Firefox hat bzgl Datenschutz in letzter Zeit manches Vertrauen verspielt und Chrome ist von Google).
 
-*Aus fachdidaktischer Sicht ist die Entscheidung für die Programmierung einer WebApp extrem konsequent, da die Schüler ausgehend vom Coden mit Markdown, HTML und CSS perfekt zu JavaScript motiviert werden können. Das war mein bisheriger Ansatz und dich finde diese Line nach wie vor schön linear. Im nächsten Durchgang will ich mit dem RaspberryPi anfangen und finde die Idee schick, die damit erlernte Programmiersprache Python dann zur Entwicklung einer App zu verwenden. Zum Einen kommt es Schülern entgegen, nur eine Programmiersprache lernen, zum Anderen kommt es ihne auch entgegen, dass es nicht JavaScript oder Java ist. Zu Markdown und Webprogrammierung kommen die Schüler dann automatisch, wenn sie ihr Projekt dokumentieren oder ihre App im Internet präsentieren wollen.*
+*Aus fachdidaktischer Sicht ist die Entscheidung für die Programmierung einer WebApp extrem konsequent, da die Schüler ausgehend vom Coden mit Markdown, HTML und CSS perfekt zu JavaScript motiviert werden können und mit [AppLab](https://code.org/educate/applab) eine nette Brücke zu JavaScript existiert. Das war mein bisheriger Ansatz und ich finde diese Linie nach wie vor überzeugend.*
+*Im nächsten Durchgang will ich dennoch mit dem RaspberryPi anfangen und finde die Idee schick, die damit erlernte Programmiersprache Python dann zur Entwicklung einer App zu verwenden. Zum Einen kommt es Schülern entgegen, nur eine Programmiersprache lernen, zum Anderen kommt es ihnen auch entgegen, dass es nicht JavaScript oder Java ist. Zu Markdown und Webprogrammierung kommen die Schüler dann automatisch, wenn sie ihr Projekt dokumentieren oder ihre App im Internet präsentieren wollen.*
+*Ein dritter fachdidaktischer Ansatz könnte m.E. beim Arduino beginnen. Die Brücke zur App-Entwicklung ist Processing, da damit sowohl der Arduinos als auch super einfach Apps entwickelt werden können.*
 
 ## Native App
 
@@ -37,6 +39,10 @@ Weitere Möglichkeiten, die ich nicht empfehle oder die ich noch nicht ausprobie
 ## Web-App
 Der Hauptbegriff lautet hier JavaScript. Entweder man lernt JavaScript oder eine ihrer vereinfachten Scriptsprachen.
 
+### Klicken
+* [AppLab](https://code.org/educate/applab)
+
+### Programmieren
 * **JavaScript** [Tutorials von Mozilla](https://developer.mozilla.org/en-US/docs/Web/Tutorials).
 * [LimeJS](https://github.com/digitalfruit/limejs)
 * [CoffeeScript](http://coffeescript.org/). [GitBook-Anleitung](https://weakish.gitbooks.io/cs4cats/content/coffeescript-for-cats.html)
