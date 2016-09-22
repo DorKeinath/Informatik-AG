@@ -31,3 +31,4 @@ Man kann mit SonicPi auch **Minecraft** programmieren: Seite 29 und 53 in der [A
 ## Weitere Tutorials
 
 * [Anleitung Essentials als pdf](https://www.raspberrypi.org/magpi/issues/essentials-sonic-pi-v1/)
+* [mehackit-Tutorial](http://sonic-pi.mehackit.org/)

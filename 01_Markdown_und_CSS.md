@@ -1,36 +1,30 @@
 Markdown & CSS
 =============
-Markdown ist eine der einfachsten und praktischsten Auszeichnungssprachen. Ein Inhalt geschrieben in Markdown (*.md) kann ins OpenDocument-Format (*.odt) oder z.B. auch nach HTML kompiliert werden.
 
-Demonstration mit [markdown.css](http://mrcoles.com/demo/markdown-css/#html)
+## Informationen
+Markdown ist vermutlich die einfachste Auszeichnungssprache. Ein Inhalt geschrieben in Markdown (*.md) kann z.B. ins OpenDocument-Format (odt) oder nach HTML kompiliert werden.
+
+Demonstration mit [markdown.css](http://mrcoles.com/demo/markdown-css/#html).
 
 Das [GitBook Informatik-AG](https://www.gitbook.com/book/dorkeinath/informatik-ag/details) ist zum Beispiel in Markdown geschrieben.
 
-## Exkurs
-Das Kompilieren funktioniert mittels JavaScript z.B. mit [markdown-styles](https://github.com/mixu/markdown-styles) oder unter Linux z.B. mit [Pandoc](https://wiki.ubuntuusers.de/Pandoc/#Unterstuetzte-Formate).
 
-## Projekt
-Die Schüler schreiben ein GitBook in **Markdown**.
-Das Layout passen sie durch Code in einem **CSS** an.
-Als besonderes Schmankerls schreiben sie mathematische Formeln in **LaTeX**-Code.
-[Cheatsheet zur Markdown-Syntax](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+## Projekt "Mein erstes GitBook"
+### GitBook mit Markdown und LaTeX
 
-[LaTeX-Mathematische Zeichen](https://de.wikipedia.org/wiki/Liste_mathematischer_Symbole#Gleichheitszeichen)
+1. Die Schüler [melden sich bei GitBook an](http://xcosx.de/mgb/keineph-slides/slides/Erste_Stunde_mit_GitBook.html#/).
+1. Die Schüler schreiben ein GitBook in  [Markdown-Syntax](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) und verwenden dabei mathematische Formeln, die sie in [LaTeX-Code](https://de.wikipedia.org/wiki/Hilfe:TeX) schreiben.
 
-[LaTeX-Code](http://www.artofproblemsolving.com/wiki/index.php?title=LaTeX:Commands)
 
-[LaTeX-Symbole](http://www.artofproblemsolving.com/wiki/index.php?title=LaTeX:Symbols)
+### CSS des GitBooks bearbeiten
+Die Schüler stylen ihr GitBook, indem Sie CSS-Code in die ```website.css``` schreiben. Dabei verwenden Sie das Firefox-Add-On **Firebug**.
 
-Die ```website.css``` bearbeiten die Schüler mit Hilfe des Add-Ons **Firebug**.
-1. Sie suchen damit wo sie etwas verändern können.
+1. Sie suchen damit wo sie etwas am Aussehen verändern können.
 1. Sie verändern es nach ihrem Geschmack. Dazu verwenden Sie evtl. weitere Informationen von [selfhtml.org](https://wiki.selfhtml.org/wiki/CSS/Anwendung_und_Praxis)
 1. Sie kopieren den Code in die ```website.css```.
 
-### Lehrer-Material
-* [Anleitung zu GitBook für Lehrer](GitBook_Anleitung_fuer_Lehrer.md)
-* In's GitBook stellen: [Anleitung zu GitBook für Schüler](GitBook_Anleitung_fuer_Schueler.md)
-[GitBook - HO Erste Stunde](GitBook_HO_Erste_Stunde.md)
 
-## Mögliche Exkurse
-* Die Schüler verwenden **GitHub**. [GitHub - Erste Schritte](https://thomas-leister.de/allgemein/github-fuer-anfaenger-repository-anlegen-und-code-hochladen/)
-* Die Schüler schreiben eine Anleitung auf [Sphinx](http://www.sphinx-doc.org/en/stable/)
+## Mögliche Exkurse und Erweiterungen
+* Die Schüler kompilieren eine Markdown-Datei in ein anderes Format. (1) Sie verwenden ein JavaScript, z.B. [markdown-styles](https://github.com/mixu/markdown-styles) oder (2) sie verwenden unter Linux z.B. [Pandoc](https://wiki.ubuntuusers.de/Pandoc/#Unterstuetzte-Formate).
+* Die Schüler verwenden das **Terminal** als Schnittstelle zum GitBook und lernen **GitHub** kennen. [GitHub - Erste Schritte](https://thomas-leister.de/allgemein/github-fuer-anfaenger-repository-anlegen-und-code-hochladen/).
+* Die Schüler schreiben eine Anleitung auf [Sphinx](http://www.sphinx-doc.org/en/stable/) (verwendet reStructuredText - eine Auszeichnungssprache wie Markdown).

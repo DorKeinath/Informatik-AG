@@ -42,7 +42,7 @@ Weitere Möglichkeiten, die ich nicht empfehle oder die ich noch nicht ausprobie
 Der Hauptbegriff lautet hier JavaScript. Entweder man lernt JavaScript oder eine zu JavaScript kompilierende vereinfachte Skriptsprache.
 
 ### Klicken
-* [AppLab](https://code.org/educate/applab)
+* [App Lab](https://code.org/educate/applab) *[Hinweise für Lehrer](https://code.org/educate)*
 
 ### Programmieren
 * **JavaScript** [Tutorials von Mozilla](https://developer.mozilla.org/en-US/docs/Web/Tutorials).
