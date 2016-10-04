@@ -2,3 +2,8 @@
 .book.color-theme-1 .book-body .page-wrapper .page-inner section.normal a {
   color: tomato;
 }
+
+.markdown-section blockquote, .markdown-section dl, .markdown-section ol, .markdown-section p, .markdown-section table, .markdown-section ul {
+  margin-top: 8px;
+}
+
