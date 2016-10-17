@@ -2,7 +2,7 @@
 
 ## Was ist SonicPi
 
-[SonicPi](sonic-pi.net) ist ein modernes Kompositionsprogramm.
+[SonicPi](http://sonic-pi.net/) ist ein modernes Kompositionsprogramm.
 
 Höre dir zum Beispiel auf deren Internetseite das Beispiel *Listen to crazy coded beats* an.
 
