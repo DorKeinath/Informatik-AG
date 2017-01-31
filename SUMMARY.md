@@ -5,6 +5,13 @@
 * [Markdown](markdown.md)
 * [LaTeX](latex.md)
 * [CSS](css.md)
+* [HTML](html.md)
+* [Frameworks](03_JS-Framework.md)
+* [Static Site Generators](static_site_generators.md)
+* [JavaScript](javascript.md)
+* [Terminal](terminal.md)
+* [Python](python.md)
+* [RPi](07_RPi.md)
 
 ## ILT
 * [Tools für WebApps](tools_webapp.md)
