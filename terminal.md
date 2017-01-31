@@ -1,9 +1,11 @@
 # Linux
 [distrochooser.de](https://distrochooser.de/?l=1)
+
 [Verzeichnisstruktur](https://wiki.ubuntuusers.de/Verzeichnisstruktur/)
 
 # Terminal
 [HO](http://www.321tux.de/wp-content/uploads/2010/03/shell-uebersicht.pdf)
+
 [Kurze Einführung auf ubuntuusers](https://wiki.ubuntuusers.de/Shell/Einf%C3%BChrung/)
 
 ## Einführung im Plenum
