@@ -11,19 +11,26 @@
 ## Einführung im Plenum
 * `pwd`
 * `ls`
-* `ls -l`
-* `ls -a`
+* `ls -lhtra` (long humanreadable zeitgeordnet umgekehrt versteckte)
 * Tabulator zur Syntaxergänzung
-* Pfeiltasten, `history` und Strg+R für bisherige Aufrufe.
+* Pfeiltasten, `history` mit `!` und Strg+R für bisherige Aufrufe.
 * Strg+C zum Beenden eines Prozesses
 * `sudo`
 
-Minimalziel der Stunde: Ordner und Datei erstellen und kopieren können.
+
 
 ## Übungen in EA/PA
-Wofür sind die folgenden Befehle gut?
+Wofür sind die folgenden Befehle gut? Finde heraus, wofür die Befehle verwendet werden können und probiere den einen oder anderen Befehl aus.
 
-Suche mit `--help` oder `man` nach dem Befehl und führe ihn im Terminal so aus, wie sein Aufruf definiert ist. Zum Beispiel steht bei `ls --help`
+Das Minimalziel der Stunde ist es,dass du **Ordner und Datei erstellen und kopieren** kannst.
+
+Es gibt mehrere Möglichkeiten, wie du etwas über einen Befehl x herausfinden kannst:
+
+1. `whatis x`
+2. `x --help`
+3. `man x`
+
+Zum Beispiel spuckt das Terminal bei `ls --help` so etwas aus wie
 
 > Aufruf: ls [OPTION]... [DATEI]...
 
@@ -31,25 +38,28 @@ Das heißt, dass man eine Option oder einen Dateinamen eingeben kann, aber nicht
 
 * `cd`
 * `cd ..`
+* `cd -`
 * `mkdir`
 * `rmdir`
 * `touch`
 * `cp`
 * `mv`
 * `rm`
-* `firefox`
 * `find`
 * `echo`
+* `firefox`
 * `wget`
-* `ifconfig`
+* `tar`
+* `gzip`
 * `nano`
 * `vi`
-* `tar`
-* `geunzip`
 * `cat`
 * `apt`
-* `df`
+* `df -h`
+* `ifconfig`
 * `which`
+* `whereis`
+* `locate`
 * `rsync`
 
 ## Spielereien
