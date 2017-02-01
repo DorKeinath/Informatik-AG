@@ -39,21 +39,21 @@
 
 **Importieren** weiterer Funktionen aus noch nicht geladenen Pakten
 
-```
+```python
 import time
 print(time.asctime())
 ```
 
 oder
 
-```
+```python
 from time import asctime
 print(asctime())
 ```
 
 Ein ganzes **Python-Skript** bzw. **Python-Programm** test.py schreiben und mit `python3 test.py` (oder - falls das Shabang vorhanden ist - mit `./test.py`) starten.
 
-```
+```python
 #!/usr/bin/env python3
 
 name = input('Wie heißt du? ')
@@ -64,7 +64,7 @@ print('Hallo ' + name + '!')
 
 `type(3.2)`
 
-```
+```python
 #!/usr/bin/env python3
 
 erste_eingabe = input('Erster Summand: ')
@@ -120,6 +120,15 @@ Es gibt verschiedene Zeichentabellen. Die älteste heißt **ASCII**; sie enthäl
 Das "b" bei der Ausgabe von `text` bedeutet, dass das Folgende als ein Bytestring ist.
 
 `re = text.decode("utf-8")`
+
+### PL (Listen)
+
+`list(range(10))`
+
+```python
+for i in range(10):
+  print("Hallo! ", end="")
+```
 
 
 <!-- Später
