@@ -12,9 +12,10 @@
 * `pwd`
 * `ls`
 * `ls -lhtra` (long humanreadable zeitgeordnet umgekehrt versteckte)
-* Tabulator zur Syntaxergänzung
+* Tabulator zur Syntaxergänzung.
+* Pfeil-nach-oben zum Aufruf der letzten Eingabe.
 * Pfeiltasten, `history` mit `!` und Strg+R für bisherige Aufrufe.
-* Strg+C zum Beenden eines Prozesses
+* Strg+C zum Beenden eines Prozesses.
 * `sudo`
 
 
@@ -22,7 +23,7 @@
 ## Übungen in EA/PA
 Wofür sind die folgenden Befehle gut? Finde heraus, wofür die Befehle verwendet werden können und probiere den einen oder anderen Befehl aus.
 
-Das Minimalziel der Stunde ist es,dass du **Ordner und Datei erstellen und kopieren** kannst.
+Das Minimalziel der Stunde ist es, dass du **Ordner und Datei erstellen und kopieren** kannst.
 
 Es gibt mehrere Möglichkeiten, wie du etwas über einen Befehl x herausfinden kannst:
 
@@ -45,6 +46,7 @@ Das heißt, dass man eine Option oder einen Dateinamen eingeben kann, aber nicht
 * `cp`
 * `mv`
 * `rm`
+* `clear`
 * `find`
 * `echo`
 * `firefox`
