@@ -6,3 +6,6 @@ a = float(erste_eingabe)
 b = float(zweite_eingabe)
 s = a + b
 print('Die Summe ist: ' + str(s))
+
+for i in range(10):
+  

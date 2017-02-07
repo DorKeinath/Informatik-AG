@@ -8,6 +8,8 @@
 
 [Englisches Python-Tutorial](https://learnpythonthehardway.org/book/)
 
+[The Hitchhiker's Guide to Python](http://docs.python-guide.org/en/latest/)
+
 [Englisches Buch bzw. pdf](http://greenteapress.com/wp/think-python-2e/)
 
 [Deutsches Einsteigerbuch](https://www.dpunkt.de/buecher/4571/python-kinderleicht%21.html)
@@ -22,9 +24,13 @@
 
 ### PL (Basics)
 
+Mit Python kann man Computerprogramme schreiben. Ein Programm ist der Text, der der dummen Hardware sagt, was sie tun soll. Also zum Beispiel soll der Bildschirm "Hallo" schreiben. Das Programm ist dabei nicht nur Code, sondern besteht quasi aus Gedanken.
+
 **Python-Console** starten mit `python` oder `python3` und sie beenden mit Strg+D.
 
 `python3`
+
+`print('Hallo Welt!')`
 
 **Hilfe** zu vorhandenen Funktionen erhält man mit `help()`. Beenden derselben mit `q`.
 
@@ -39,14 +45,14 @@
 
 **Importieren** weiterer Funktionen aus noch nicht geladenen Pakten
 
-```python
+```
 import time
 print(time.asctime())
 ```
 
 oder
 
-```python
+```
 from time import asctime
 print(asctime())
 ```
@@ -81,7 +87,44 @@ Gib den Body-Mass-Index einer Person aus, indem du sie vorher nach den nötigen 
 
 Du kannst Pi aus dem Paket `math` verwenden
 
-`from math import pi`
+```python
+from math import pi
+```
+
+### PL (for)
+
+```python
+for i in range(10):
+  print("Hallo! ", end="")
+```
+
+### PL (if-else)
+
+```python
+zahl = input("Gib bitte eine gerade Zahl ein: ")
+n = int(zahl)
+if n % 2 == 1:
+    print("ungerade")
+else:
+    print("gerade")
+```
+
+### EA (Passwortabfrage)
+Lass dir einen Namen und ein Passwort geben. Wenn beides deine Daten sind, gib "Herzlich willkommen!" aus, a
+
+### EA (BMI v2)
+Ergänze das BMI-Skript durch die Interpretation des Body-Mass-Indexes bzgl. Unter-, Normal- und Übergewicht. Man kann übrigens if-Anweisungen auch verschachteln. Und außerdem gibt noch 'elif'.
+
+```python
+if ...:
+  ...
+elif ...:
+  ...
+elif ...:
+  ...
+else:
+  ...
+```
 
 ### PL (Kollektionen)
 
@@ -96,7 +139,7 @@ Strings sind nicht die wichtigste Objekte, die beim Programmieren verwendet werd
   + Mengen
     * set `{1, 2, 3}`
     * frozenset `frozenset{1, 2, 3}`
-  + dict `{'schluessel': wert, 'schluessel2': wert2}`
+  + dict `{'schluessel': wert, 'key': value}`
 
 Eine wichtige Eigenschaft von Kollektionen ist ihre (Un-)Veränderbarkeit.
 
@@ -123,13 +166,54 @@ Das "b" bei der Ausgabe von `text` bedeutet, dass das Folgende als ein Bytestrin
 
 ### PL (Listen)
 
-`list(range(10))`
-
-```python
-for i in range(10):
-  print("Hallo! ", end="")
+```
+a = ['alpha','beta', 'gamma', 'delta']
+a[2]
+a[-1]
+a[0:2]
+3*a + ['epsilon']
+len(a)
+a.append('epsilon')
 ```
 
+Eine Liste zu kopieren ist mit diesem Slicing zu erklären:
+`b = a[:]`
+
+```
+a = [0,1,0,1,0,1]
+a[0]+1
+a[0:2] = []
+a.sort()
+```
+
+```
+from random import shuffle
+a = [0,1,0,1,0,1]
+shuffle(a)
+```
+
+Es gibt viele Methoden, Listen zu erzeugen
+
+`list(range(10))`
+
+`[2*i for i in range(4,9)]`
+
+das letzte nennt man **Comprehensions** und ist eine Spezialität von Python.
+
+### EA (Listen-Übungen)
+
+a) Bilde eine Liste der ersten 1000 Quadratzahlen.
+
+b) Erkläre den folgenden Code
+
+```python
+a = "Das sind einge willkürlich lange Wörter"
+b = a.split()
+for x in b:
+    print(x, len(x))
+```
+
+<!-- Weiter mit while  und dict (Projekt: Vokabeltrainer)-->
 
 <!-- Später
 ## Einstieg in Kivy

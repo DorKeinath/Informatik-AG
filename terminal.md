@@ -8,6 +8,8 @@
 
 [Kurze Einführung auf ubuntuusers](https://wiki.ubuntuusers.de/Shell/Einf%C3%BChrung/)
 
+[Nette Übersicht auf Linuxmint](https://community.linuxmint.com/tutorial/view/244)
+
 ## Einführung im Plenum
 * `pwd`
 * `ls`
@@ -50,6 +52,7 @@ Das heißt, dass man eine Option oder einen Dateinamen eingeben kann, aber nicht
 * `find`
 * `echo`
 * `firefox`
+* `cal`
 * `wget`
 * `tar`
 * `gzip`
@@ -66,7 +69,41 @@ Das heißt, dass man eine Option oder einen Dateinamen eingeben kann, aber nicht
 
 ## Spielereien
 * `curl wttr.in/bretten`
+* `rev`
 * `time read`
 * `tr -c "[:digit:]" " " < /dev/urandom | dd cbs=$COLUMNS conv=unblock | GREP_COLOR="1;32" grep --color "[^ ]"`
 * `cat /dev/urandom | hexdump -C | grep "ca fe"`
 * [Freakige Befehle](https://www.commandlinefu.com/commands/browse/sort-by-votes)
+
+# Bash-Skripte
+
+Bash-Skripte haben die Endung `*.sh` und können in der ersten Zeile ein Shebang haben. Mit einem Bash-Skript kann man mehrere Terminal-Befehle hintereinander ausführen lassen; ein Bash-Skript ist also quasi ein Terminal-Programm. Und so sieht der Code der Datei `test.sh` aus:
+
+```Bash
+#!/bin/bash
+notify-send "Start"
+
+```
+Dabei sind Zeilen mit `#` Kommentare.
+
+Das Skript starten geht z.B. mit
+
+`bash test.sh`
+
+oder
+
+`./test.sh`
+
+Beim letzteren Startbefehl muss man vor dem Ausführen bei den Zugriffsrechten das starten zulassen:
+
+`chmod u+x test.sh`
+
+
+## Bash-Spiel
+
+"Programmiere" mit Hilfe [dieses Links](https://github.com/mydzor/bash2048) ein Bash-Spiel
+
+## Start-Skript
+
+Schreibe ein Skript, das dir deinen Desktop anpasst.
+* Suche zum Beispiel nach "desktop wallpaper terminal mint "
