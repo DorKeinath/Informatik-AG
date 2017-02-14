@@ -102,8 +102,3 @@ Beim letzteren Startbefehl muss man vor dem Ausführen bei den Zugriffsrechten d
 ## Bash-Spiel
 
 "Programmiere" mit Hilfe [dieses Links](https://github.com/mydzor/bash2048) ein Bash-Spiel
-
-## Start-Skript
-
-Schreibe ein Skript, das dir deinen Desktop anpasst.
-* Suche zum Beispiel nach "desktop wallpaper terminal mint "

@@ -22,7 +22,7 @@
 
 ## Einstieg in Python
 
-### PL (Basics)
+### PL: Basics
 
 Mit Python kann man Computerprogramme schreiben. Ein Programm ist der Text, der der dummen Hardware sagt, was sie tun soll. Also zum Beispiel soll der Bildschirm "Hallo" schreiben. Das Programm ist dabei nicht nur Code, sondern besteht quasi aus Gedanken.
 
@@ -32,7 +32,7 @@ Mit Python kann man Computerprogramme schreiben. Ein Programm ist der Text, der 
 
 `print('Hallo Welt!')`
 
-**Hilfe** zu vorhandenen Funktionen erhält man mit `help()`. Beenden derselben mit `q`.
+**Hilfe** zu vorhandenen Funktionen erhält man mit `help()`. Beenden der Hilfe mit `q`.
 
 `help(len)`
 
@@ -81,24 +81,31 @@ s = a + b
 print('Die Summe ist: ' + str(s))
 ```
 
-### EA (BMI-Rechner)
+### EA: Begrüßung
+Schreibe ein Python-Skript, das den Aufrufer nach seinem Namen fragt und ihn dann mit seinem Namen und der aktuellen Uhrzeit begrüßt.
 
-Gib den Body-Mass-Index einer Person aus, indem du sie vorher nach den nötigen Variablen fragst.
+### EA: Potenz-Berechner
+Schreibe ein Python-Skript, das den Aufrufer nach einer Basis und einem Exponenten fragt und dann die Potenz berechnet und ausgibt. Hinweis: `2**3` ergibt 8.
 
-Du kannst Pi aus dem Paket `math` verwenden
+### EA: Kreis-Berechner
+Schreibe ein Python-Skript, das den Aufrufer nach einem Radius oder Durchmesser eines Kreises fragt und damit den Umfang und Inhalt des Kreises berechnet und ausgibt. Hinweis: Du kannst Pi aus dem Paket `math` verwenden
 
 ```python
 from math import pi
 ```
 
-### PL (for)
+### EA: BMI-Rechner
+
+Gib den [Body-Mass-Index](https://de.wikipedia.org/wiki/Body-Mass-Index#Berechnung) einer Person aus, indem du sie vorher nach den nötigen Variablen fragst.
+
+### PL: for
 
 ```python
 for i in range(10):
   print("Hallo! ", end="")
 ```
 
-### PL (if-else)
+### PL: if-else
 
 ```python
 zahl = input("Gib bitte eine gerade Zahl ein: ")
@@ -109,10 +116,10 @@ else:
     print("gerade")
 ```
 
-### EA (Passwortabfrage)
+### EA: Passwortabfrage
 Lass dir einen Namen und ein Passwort geben. Wenn beides deine Daten sind, gib "Herzlich willkommen!" aus, a
 
-### EA (BMI v2)
+### EA: BMI v2
 Ergänze das BMI-Skript durch die Interpretation des Body-Mass-Indexes bzgl. Unter-, Normal- und Übergewicht. Man kann übrigens if-Anweisungen auch verschachteln. Und außerdem gibt noch 'elif'.
 
 ```python
@@ -126,7 +133,7 @@ else:
   ...
 ```
 
-### PL (Kollektionen)
+### PL: Kollektionen
 
 Strings sind nicht die wichtigste Objekte, die beim Programmieren verwendet werden, Listen sind z.B. wichtiger; sie werden in eckige Klammern geschrieben. Man hat die folgenden Möglichkeiten:
 
@@ -164,7 +171,7 @@ Das "b" bei der Ausgabe von `text` bedeutet, dass das Folgende als ein Bytestrin
 
 `re = text.decode("utf-8")`
 
-### PL (Listen)
+### PL: Listen
 
 ```
 a = ['alpha','beta', 'gamma', 'delta']
@@ -200,7 +207,7 @@ Es gibt viele Methoden, Listen zu erzeugen
 
 das letzte nennt man **Comprehensions** und ist eine Spezialität von Python.
 
-### EA (Listen-Übungen)
+### EA: Listen-Übungen
 
 a) Bilde eine Liste der ersten 1000 Quadratzahlen.
 
