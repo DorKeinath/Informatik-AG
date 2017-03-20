@@ -75,6 +75,10 @@ Das heißt, dass man eine Option oder einen Dateinamen eingeben kann, aber nicht
 * `cat /dev/urandom | hexdump -C | grep "ca fe"`
 * [Freakige Befehle](https://www.commandlinefu.com/commands/browse/sort-by-votes)
 
+## Security mit dem Terminal
+
+Mit dem Terminal kann man seine [Sicherheit hinsichtlich seines Datenschutzes](https://secitem.at/blog/terminal-tipps) erhöhen. 
+
 # Bash-Skripte
 
 Bash-Skripte haben die Endung `*.sh` und können in der ersten Zeile ein Shebang haben. Mit einem Bash-Skript kann man mehrere Terminal-Befehle hintereinander ausführen lassen; ein Bash-Skript ist also quasi ein Terminal-Programm. Und so sieht der Code der Datei `test.sh` aus:
@@ -101,4 +105,4 @@ Beim letzteren Startbefehl muss man vor dem Ausführen bei den Zugriffsrechten d
 
 ## Bash-Spiel
 
-"Programmiere" mit Hilfe [dieses Links](https://github.com/mydzor/bash2048) ein Bash-Spiel
+Programmiere mit Hilfe [dieses Links](https://github.com/mydzor/bash2048) ein Bash-Spiel.

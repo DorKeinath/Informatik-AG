@@ -26,7 +26,7 @@
 
 Mit Python kann man Computerprogramme schreiben. Ein Programm ist der Text, der der dummen Hardware sagt, was sie tun soll. Also zum Beispiel soll der Bildschirm "Hallo" schreiben. Das Programm ist dabei nicht nur Code, sondern besteht quasi aus Gedanken.
 
-**Python-Console** starten mit `python` oder `python3` und sie beenden mit Strg+D.
+**Python-Console** starten mit `python` oder `python3` und sie beenden mit Strg+D. Den Bildschirm leeren geht mit Strg+L.
 
 `python3`
 
@@ -38,6 +38,7 @@ Mit Python kann man Computerprogramme schreiben. Ein Programm ist der Text, der 
 
 **Ausgeben und Abfragen**
 
+`print('Dor' + 'Keinath')`
 `print(1000*'DorKeinath ')`
 
 `a = input('Gib etwas ein:')`
@@ -50,11 +51,18 @@ import time
 print(time.asctime())
 ```
 
-oder
+oder für einzelne Funktionen:
 
 ```
 from time import asctime
 print(asctime())
+```
+
+Weiteres Beispiel: Um den Bildschirm zu löschen, kannst du
+
+```
+from os import system
+system("clear")
 ```
 
 Ein ganzes **Python-Skript** bzw. **Python-Programm** test.py schreiben und mit `python3 test.py` (oder - falls das Shabang vorhanden ist - mit `./test.py`) starten.
@@ -82,7 +90,16 @@ print('Die Summe ist: ' + str(s))
 ```
 
 ### EA: Begrüßung
-Schreibe ein Python-Skript, das den Aufrufer nach seinem Namen fragt und ihn dann mit seinem Namen und der aktuellen Uhrzeit begrüßt.
+Schreibe ein Python-Skript, das den Aufrufer nach seinem Namen fragt und ihn dann mit seinem Namen und der aktuellen Uhrzeit begrüßt, z.B. "Hallo Python, es ist 12:45 Uhr."
+
+Um die Uhrzeit schön zu formatieren, kannst du aus dem Modul `time` die Funktion `strftime` verwenden:
+
+```python
+from time import strftime
+print(strftime("%d %b %Y %H:%M:%S"))
+
+```
+[Mehr zur Funktion `strftime`]((https://docs.python.org/2/library/time.html#time.strftime))
 
 ### EA: Potenz-Berechner
 Schreibe ein Python-Skript, das den Aufrufer nach einer Basis und einem Exponenten fragt und dann die Potenz berechnet und ausgibt. Hinweis: `2**3` ergibt 8.
@@ -108,16 +125,34 @@ for i in range(10):
 ### PL: if-else
 
 ```python
-zahl = input("Gib bitte eine gerade Zahl ein: ")
+zahl = input("Gib bitte eine natürliche Zahl ein: ")
 n = int(zahl)
 if n % 2 == 1:
-    print("ungerade")
+    print("Deine Zahl ist ungerade.")
 else:
-    print("gerade")
+    print("Deine Zahl ist gerade.")
 ```
 
 ### EA: Passwortabfrage
-Lass dir einen Namen und ein Passwort geben. Wenn beides deine Daten sind, gib "Herzlich willkommen!" aus, a
+Lass dir einen Namen und ein Passwort geben. Wenn beides deine Daten sind, gib "Herzlich willkommen!" aus. Falls die Daten nicht mit deinen Daten übereinstimmen gibt eine Fehlermeldung aus.
+
+### EA: Passwortvirus
+Verändere eines deiner obigen Programme zu einem Virus, das heimlich den Namen und das Passwort des Benutzers speichert. So schreibst du in eine Datei:
+
+```python
+#!/usr/bin/env python3
+# Die Datei namens datei.txt im Modus "append" öffnen, was bedeutet, dass beim Schreiben hinzugefügt und nicht überschrieben wird. Will man überschreiben, kann man `w` verwenden.
+geheim = open("datei.txt", "a")
+# Etwas in die Datei schreiben:
+geheim.write("Text in der Datei.\n")
+# Die Datei schließen. Wenn man das nicht macht, kann die Datei beschädigt werden.
+geheim.close()
+```
+
+[Weitere Informationen zum Umgang mit Dateien](https://www.tutorialspoint.com/python/python_files_io.htm)
+
+Erweiterung: Lies mit dem [os-Modul]((https://docs.python.org/2/library/os.html)) heimlich Daten des Benutzers aus und schreibe sie auch in die Datei.
+
 
 ### EA: BMI v2
 Ergänze das BMI-Skript durch die Interpretation des Body-Mass-Indexes bzgl. Unter-, Normal- und Übergewicht. Man kann übrigens if-Anweisungen auch verschachteln. Und außerdem gibt noch 'elif'.
@@ -132,6 +167,13 @@ elif ...:
 else:
   ...
 ```
+
+### EA: Anwesenheitsampel
+Programmiere eine Ampel, die anzeigt, ob ein Lehrer im Lehrerzimmer ist. Gib dafür jedem Lehrer eine Zahl vor, damit der Lehrer beim Hineingehen nur seine Zahl eintippen muss.
+
+> 01 DorKeinath
+> 02 DorAndre
+> ...
 
 ### PL: Kollektionen
 
