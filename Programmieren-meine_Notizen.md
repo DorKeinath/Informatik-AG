@@ -9,6 +9,23 @@
 
 # Plattformübergreifende Programme mit modernen Programmiersprachen schreiben
 
+
+## RPi-Aufgaben/Projekte
+* Ein HO mit einer Befehlsübersicht bereit stellen. (if, Kommentare, ==, random, while, constrain, delay)
+* Blinkende LED, dann 8 gleichzeitig
+* Ampel. Zwei an einer Kreuzung. Dann: MIt Sicherheitszeitverzögerung. Dann Fußgängerampel 1/3 so lang wie die Autos mit Knopfdrücken.
+* Knightrider
+* 7-Segmentanzeige
+* Radar-Falle (Lichtschranke oder IR-Sensor)
+	* mit Blitz
+	* Zeit messen mit millis() b = millis()-a
+* Fahrstuhl
+	* Geschwindigkeitschip: Motortreiber. Mit analogWrite; Relais delay(10)
+* Discokugel
+* Trübungsgrad von Flüssigkeiten
+* Förderband
+* Zufallswürfel mit LEDs
+
 ## Python
 
 * Nicht PyGTK verwenden, weil's stirbt. Besser PyGObject oder
@@ -29,5 +46,3 @@
 
 # Tutorials
 [Link-Liste zu Tutorials für viele Programmiersprachen](https://wiki.ubuntuusers.de/Links/Programmierung/)
-
-
