@@ -1,35 +1,35 @@
 # Inhalt
-<!-- MDTOC maxdepth:6 firsth1:0 numbering:1 flatten:0 bullets:0 updateOnSave:1 -->
+<!-- MDTOC maxdepth:6 firsth1:0 numbering:0 flatten:1 bullets:0 updateOnSave:1 -->
 
-1. [Links](#links)   
-&emsp;1.1. [Tutorials](#tutorials)   
-&emsp;1.2. [Python auf Android](#python-auf-android)   
-2. [Einstieg in Python](#einstieg-in-python)   
-&emsp;2.1. [PL: Basics](#pl-basics)   
-&emsp;2.2. [EA: Begrüßung](#ea-begrüßung)   
-&emsp;2.3. [EA: Potenz-Berechner](#ea-potenz-berechner)   
-&emsp;2.4. [EA: Kreis-Berechner](#ea-kreis-berechner)   
-&emsp;2.5. [PL: for](#pl-for)   
-&emsp;2.6. [PL: if-else](#pl-if-else)   
-&emsp;2.7. [EA: Passwortabfrage](#ea-passwortabfrage)   
-&emsp;2.8. [EA: Passwortvirus](#ea-passwortvirus)   
-&emsp;2.9. [EA: BMI](#ea-bmi)   
-&emsp;2.10. [PL: while](#pl-while)   
-&emsp;2.11. [EA: Passwortabfrage mit Brute-Force-Defence](#ea-passwortabfrage-mit-brute-force-defence)   
-&emsp;2.12. [PL: Kollektionen](#pl-kollektionen)   
-&emsp;&emsp;2.12.1. [Exkurs zu den Bytsequenzen](#exkurs-zu-den-bytsequenzen)   
-&emsp;2.13. [PL: list](#pl-list)   
-&emsp;2.14. [EA: Quadratzahlen](#ea-quadratzahlen)   
-&emsp;2.15. [EA: Schere-Stein-Papier](#ea-schere-stein-papier)   
-&emsp;2.16. [EA: Satz-Statistik](#ea-satz-statistik)   
-&emsp;2.17. [EA: Telefonnummern-Suche](#ea-telefonnummern-suche)   
-&emsp;2.18. [PL: dict](#pl-dict)   
-&emsp;2.19. [EA: Anwesenheitsampel](#ea-anwesenheitsampel)   
-3. [Einstieg in Kivy (GUI)](#einstieg-in-kivy-gui)   
-&emsp;3.1. [Widgets und ihr Layout](#widgets-und-ihr-layout)   
-&emsp;3.2. [Übergabe von Objekten zwischen Python- und Kivy-Code](#übergabe-von-objekten-zwischen-python-und-kivy-code)   
-&emsp;3.3. [EA: BMI-Rechner](#ea-bmi-rechner)   
-&emsp;3.4. [EA: Vertiefung](#ea-vertiefung)   
+[Links](#links)   
+[Tutorials](#tutorials)   
+[Python auf Android](#python-auf-android)   
+[Einstieg in Python](#einstieg-in-python)   
+[PL: Basics](#pl-basics)   
+[EA: Begrüßung](#ea-begrüßung)   
+[EA: Potenz-Berechner](#ea-potenz-berechner)   
+[EA: Kreis-Berechner](#ea-kreis-berechner)   
+[PL: for](#pl-for)   
+[PL: if-else](#pl-if-else)   
+[EA: Passwortabfrage](#ea-passwortabfrage)   
+[EA: Passwortvirus](#ea-passwortvirus)   
+[EA: BMI](#ea-bmi)   
+[PL: while](#pl-while)   
+[EA: Passwortabfrage mit Brute-Force-Defence](#ea-passwortabfrage-mit-brute-force-defence)   
+[PL: Kollektionen](#pl-kollektionen)   
+[PL: Exkurs zu den Bytsequenzen](#pl-exkurs-zu-den-bytsequenzen)   
+[PL: list](#pl-list)   
+[EA: Quadratzahlen](#ea-quadratzahlen)   
+[EA: Schere-Stein-Papier](#ea-schere-stein-papier)   
+[EA: Satz-Statistik](#ea-satz-statistik)   
+[EA: Telefonnummern-Suche](#ea-telefonnummern-suche)   
+[PL: dict](#pl-dict)   
+[EA: Anwesenheitsampel](#ea-anwesenheitsampel)   
+[Einstieg in Kivy (GUI)](#einstieg-in-kivy-gui)   
+[Widgets und ihr Layout](#widgets-und-ihr-layout)   
+[Übergabe von Objekten zwischen Python- und Kivy-Code](#übergabe-von-objekten-zwischen-python-und-kivy-code)   
+[EA: BMI-Rechner](#ea-bmi-rechner)   
+[EA: Vertiefung](#ea-vertiefung)   
 
 <!-- /MDTOC -->
 
@@ -260,7 +260,7 @@ Unveränderbar
  * set
  * dict
 
-#### Exkurs zu den Bytsequenzen
+### PL: Exkurs zu den Bytsequenzen
 *Mögliches GFS-Thema*
 Es gibt verschiedene Zeichentabellen. Die älteste heißt **ASCII**; sie enthält nur 128 Zeichen. Die größte Zeichentabelle heißt **Unicode** und ihre bekannteste Kodierung (engl. "encoding") heißt **UTF-8**. Python3 definiert Strings (`str`) als Unicode-Text.
 
