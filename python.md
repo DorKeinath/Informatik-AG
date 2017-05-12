@@ -1,5 +1,39 @@
 # Python
 
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:0 orderedList:0 -->
+
+- [Python](#python)
+	- [Links](#links)
+		- [Tutorials](#tutorials)
+		- [Python auf Android](#python-auf-android)
+	- [Einstieg in Python](#einstieg-in-python)
+		- [PL: Basics](#pl-basics)
+		- [EA: Begrüßung](#ea-begrüung)
+		- [EA: Potenz-Berechner](#ea-potenz-berechner)
+		- [EA: Kreis-Berechner](#ea-kreis-berechner)
+		- [PL: for](#pl-for)
+		- [PL: if-else](#pl-if-else)
+		- [EA: Passwortabfrage](#ea-passwortabfrage)
+		- [EA: Passwortvirus](#ea-passwortvirus)
+		- [EA: BMI](#ea-bmi)
+		- [PL: while](#pl-while)
+		- [EA: Passwortabfrage mit Brute-Force-Defence](#ea-passwortabfrage-mit-brute-force-defence)
+		- [PL: Kollektionen](#pl-kollektionen)
+			- [Exkurs zu den Bytsequenzen](#exkurs-zu-den-bytsequenzen)
+		- [PL: list](#pl-list)
+		- [EA: Listen-Übungen](#ea-listen-übungen)
+		- [EA: Telefonnummern-Suche](#ea-telefonnummern-suche)
+		- [PL: dict](#pl-dict)
+		- [EA: Anwesenheitsampel](#ea-anwesenheitsampel)
+	- [Einstieg in Kivy (GUI)](#einstieg-in-kivy-gui)
+		- [Widgets und ihr Layout](#widgets-und-ihr-layout)
+		- [Übergabe von Objekten zwischen Python- und Kivy-Code](#übergabe-von-objekten-zwischen-python-und-kivy-code)
+		- [EA: BMI-Rechner](#ea-bmi-rechner)
+		- [EA: Vertiefung](#ea-vertiefung)
+
+<!-- /TOC -->
+
+
 ## Links
 
 ### Tutorials
@@ -394,7 +428,7 @@ hallowidget.kv
 
 Um eine Aktion des Anwenders deines Programms in deinem Python-Code verarbeiten zu können, muss dein Python-Code auf die Widgets in deinem Kivy-Code zugreifen können. Wenn der Anwender z.B. auf einen Button klickt, soll der Python-Code etwas tun.
 
-**Zugriff auf Text** kann man auf mehreren Wegen kriegen. Um einer Funktion `funktion(self, etwas)` etwas aus einem Widget zu übergeben, verwendet man bei einem Event `root.funktion(etwas)`. Will man wiederum einen damit kreierten Output in einem Widget anzeigen, muss man entweder eine `StringProperty()` definieren oder den Output dem Widget über seine `id` zuweisen. Beispiel:
+**Zugriff auf Text** kann man auf mehreren Wegen kriegen. Um einer Funktion `funktion(self, etwas)` etwas aus einem Widget zu übergeben, verwendet man bei einem Event `root.funktion(etwas)`. Will man wiederum einen damit kreierten Output in einem Widget anzeigen, muss man entweder eine `StringProperty()` definieren oder den Output dem Widget über seine `id` zuweisen. Aus dem folgenden Beispiel kannst du beide Methoden ablesen. (Du solltest allerdings nicht beide Methoden vermischen, sonst funktioniert das was du willst vielleicht nur bei der ersten Ausführung, da die Variable mit einem konkreten Wert überschrieben wird.)
 
 kivy_widget-access.py
 ```python

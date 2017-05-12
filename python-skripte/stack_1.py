@@ -9,11 +9,11 @@ from kivy.properties import StringProperty
 class Login(BoxLayout):
     outpt = StringProperty()
 
-    def access_widget_1(self,inpt_name):
+    def access_widget_1(self,inpt_name,inpt_pwd):
         self.outpt = 'Your name is : ' + inpt_name
 
     def access_widget_2(self,inpt_pwd):
-        self.ids["outputlabel"].text = 'Your password is: ' + inpt_pwd
+        self.outpt = 'Your password is: ' + inpt_pwd
 
 class WidgetAccessApp(App):
     def build(self):
