@@ -1,39 +1,38 @@
+<!-- MDTOC maxdepth:6 firsth1:0 numbering:0 flatten:0 bullets:0 updateOnSave:1 -->
+
+[Links](#links)   
+&emsp;[Tutorials](#tutorials)   
+&emsp;[Python auf Android](#python-auf-android)   
+[Einstieg in Python](#einstieg-in-python)   
+&emsp;[PL: Basics](#pl-basics)   
+&emsp;[EA: Begrüßung](#ea-begrüßung)   
+&emsp;[EA: Potenz-Berechner](#ea-potenz-berechner)   
+&emsp;[EA: Kreis-Berechner](#ea-kreis-berechner)   
+&emsp;[PL: for](#pl-for)   
+&emsp;[PL: if-else](#pl-if-else)   
+&emsp;[EA: Passwortabfrage](#ea-passwortabfrage)   
+&emsp;[EA: Passwortvirus](#ea-passwortvirus)   
+&emsp;[EA: BMI](#ea-bmi)   
+&emsp;[PL: while](#pl-while)   
+&emsp;[EA: Passwortabfrage mit Brute-Force-Defence](#ea-passwortabfrage-mit-brute-force-defence)   
+&emsp;[PL: Kollektionen](#pl-kollektionen)   
+&emsp;&emsp;[Exkurs zu den Bytsequenzen](#exkurs-zu-den-bytsequenzen)   
+&emsp;[PL: list](#pl-list)   
+&emsp;[EA: Quadratzahlen](#ea-quadratzahlen)   
+&emsp;[EA: Schere-Stein-Papier](#ea-schere-stein-papier)   
+&emsp;[EA: Satz-Statistik](#ea-satz-statistik)   
+&emsp;[EA: Telefonnummern-Suche](#ea-telefonnummern-suche)   
+&emsp;[PL: dict](#pl-dict)   
+&emsp;[EA: Anwesenheitsampel](#ea-anwesenheitsampel)   
+[Einstieg in Kivy (GUI)](#einstieg-in-kivy-gui)   
+&emsp;[Widgets und ihr Layout](#widgets-und-ihr-layout)   
+&emsp;[Übergabe von Objekten zwischen Python- und Kivy-Code](#übergabe-von-objekten-zwischen-python-und-kivy-code)   
+&emsp;[EA: BMI-Rechner](#ea-bmi-rechner)   
+&emsp;[EA: Vertiefung](#ea-vertiefung)   
+
+<!-- /MDTOC -->
+
 # Python
-
-<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:0 orderedList:0 -->
-
-- [Python](#python)
-	- [Links](#links)
-		- [Tutorials](#tutorials)
-		- [Python auf Android](#python-auf-android)
-	- [Einstieg in Python](#einstieg-in-python)
-		- [PL: Basics](#pl-basics)
-		- [EA: Begrüßung](#ea-begrüung)
-		- [EA: Potenz-Berechner](#ea-potenz-berechner)
-		- [EA: Kreis-Berechner](#ea-kreis-berechner)
-		- [PL: for](#pl-for)
-		- [PL: if-else](#pl-if-else)
-		- [EA: Passwortabfrage](#ea-passwortabfrage)
-		- [EA: Passwortvirus](#ea-passwortvirus)
-		- [EA: BMI](#ea-bmi)
-		- [PL: while](#pl-while)
-		- [EA: Passwortabfrage mit Brute-Force-Defence](#ea-passwortabfrage-mit-brute-force-defence)
-		- [PL: Kollektionen](#pl-kollektionen)
-			- [Exkurs zu den Bytsequenzen](#exkurs-zu-den-bytsequenzen)
-		- [PL: list](#pl-list)
-		- [EA: Listen-Übungen](#ea-listen-übungen)
-		- [EA: Telefonnummern-Suche](#ea-telefonnummern-suche)
-		- [PL: dict](#pl-dict)
-		- [EA: Anwesenheitsampel](#ea-anwesenheitsampel)
-	- [Einstieg in Kivy (GUI)](#einstieg-in-kivy-gui)
-		- [Widgets und ihr Layout](#widgets-und-ihr-layout)
-		- [Übergabe von Objekten zwischen Python- und Kivy-Code](#übergabe-von-objekten-zwischen-python-und-kivy-code)
-		- [EA: BMI-Rechner](#ea-bmi-rechner)
-		- [EA: Vertiefung](#ea-vertiefung)
-
-<!-- /TOC -->
-
-
 ## Links
 
 ### Tutorials
@@ -305,13 +304,17 @@ Es gibt viele Methoden, Listen zu erzeugen
 
 `[2*i for i in range(4,9)]`
 
-das letzte nennt man **Comprehensions** und ist eine Spezialität von Python.
+das Letzte nennt man **Comprehensions** und ist eine Spezialität von Python.
 
-### EA: Listen-Übungen
+### EA: Quadratzahlen
 
-a) Bilde eine Liste der ersten 1000 Quadratzahlen.
+Bilde eine Liste der ersten 1000 Quadratzahlen.
 
-b) Erkläre den folgenden Code
+### EA: Schere-Stein-Papier
+Programmiere "Schere-Stein-Papier"
+
+### EA: Satz-Statistik
+Erkläre den folgenden Code
 
 ```python
 a = "Das sind einige willkürlich lange Wörter"
@@ -320,7 +323,8 @@ for x in b:
     print(x, len(x))
 ```
 ### EA: Telefonnummern-Suche
-TODO. Siehe Screenshot vom 2017-01-25-10-50-23 -->
+ TODO.
+ <!--Siehe Screenshot vom 2017-01-25-10-50-23 -->
 
 
 ### PL: dict
@@ -386,7 +390,7 @@ Damit das funktioniert, muss der Dateiname der kv-Datei so heißen wie das Wort 
 
 ### Widgets und ihr Layout
 
-Will man in einem Fenster etwas erscheinen lassen, spricht man davon, ein Widget hinzuzufügen. Jedes Programm hat ein *root widget*, dem du Kinder-Widgets hinzufügen kannst. Die Zugehörigkeiten der Widgets zueinander kann man in einem hierarchischen Baumdiagramm aufzeichnen. Abhängig davon wie die Kinder-Widgets angeordnet sein sollen, entscheidest du dich für ein **Layout** [1](https://kivy.org/docs/gettingstarted/layouts.html), [2](https://kivy.org/docs/guide/widgets.html#organize-with-layouts). Im folgenden wird das BoxLayout verwendet, damit alle Widgets schön untereinander sind. Im *KivyCatalog* [1](https://kivy.org/docs/examples/gen__demo__kivycatalog__main__py.html) , [2](https://github.com/kivy/kivy/tree/master/examples/demo/kivycatalog) kann man die verschiedenen Layouts ausprobieren.
+Will man in einem Fenster etwas erscheinen lassen, spricht man davon, ein Widget hinzuzufügen. Jedes Programm hat ein *root widget*, dem du Kinder-Widgets hinzufügen kannst. Die Zugehörigkeiten der Widgets zueinander kann man in einem hierarchischen Baumdiagramm aufzeichnen. Abhängig davon wie die Kinder-Widgets angeordnet sein sollen, entscheidest du dich für ein **Layout** ([1](https://kivy.org/docs/gettingstarted/layouts.html), [2](https://kivy.org/docs/guide/widgets.html#organize-with-layouts)). Im Folgenden wird das BoxLayout verwendet, damit alle Widgets schön untereinander sind. Im *KivyCatalog* ([1](https://kivy.org/docs/examples/gen__demo__kivycatalog__main__py.html) , [2](https://github.com/kivy/kivy/tree/master/examples/demo/kivycatalog)) kann man die verschiedenen Layouts ausprobieren.
 
 Das Hallo-Welt-Programm kann dann so aussehen:
 
@@ -503,7 +507,7 @@ widgetaccess.kv
 Bemerkungen zu **self**, **root** und **app**:
 Verwendet man eine Variable, muss man sagen, wo sie verwaltet wird. Das `outpt` und die Widget-IDs sind im Mutter-Widget `Login` definiert. Will man in der Funktion `access_widget_1` darauf zugreifen, muss man das mit `self` tun, weil das *aktuelle Widget* beim Ausführen der Funktion das Widget `Login` ist. Im Kivy-Code muss man hingegen mit `root` darauf zugreifen, weil `self` das Label-Widget wäre und man auf die *erste Instanz* in der Hierarchie schauen muss. Definiert man in der App-Klasse (hier `WidgetAccessApp(App)`) etwas, auf das man im Kivy-Code zugreifen will (z.B. `def funktion(self)`), dann macht man das mit `app.funktion()`. [Mehr zu Werten von Properties.](https://kivy.org/docs/api-kivy.lang.html#value-expressions-on-property-expressions-ids-and-reserved-keywords)
 
-Um auf andere Dinge als Text zuzugreifen, z.B. auf den Zustand eines Buttons, ob er gerade gedrückt ist oder nicht, verwendet man andere Properties wie `ObjectProperty` oder `ListProperty`. [Mehr zu Properties](https://kivy.org/docs/guide/lang.html#accessing-widgets-defined-inside-kv-lang-in-your-python-code)
+Um auf andere Dinge als Text zuzugreifen, z.B. auf den Zustand eines Buttons, ob er gerade gedrückt ist oder nicht, verwendet man andere Properties wie `ObjectProperty`, `ListProperty` oder `RecycleView`. [Mehr zu Properties](https://kivy.org/docs/guide/lang.html#accessing-widgets-defined-inside-kv-lang-in-your-python-code)
 
 ### EA: BMI-Rechner
 Erweitere deinen BMI-Rechner zu einer App mit graphischer Oberfläche.
