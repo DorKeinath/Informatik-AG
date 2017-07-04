@@ -40,6 +40,7 @@ Da das Updaten sonst noch viel ewiger geht, sollte man vorher
 1. Wolfram deinstallieren: `sudo apt-get remove wolfram-engine`
 2. `sudo apt-get update`
 3. `sudo apt-get upgrade`
+
 ### Python-Programme
 Unter LITE ist nur Python2 installiert. Hier also evtl. noch
 
