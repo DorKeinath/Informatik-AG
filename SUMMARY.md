@@ -12,6 +12,7 @@
 * [Terminal](terminal.md)
 * [Python](python.md)
 * [RPi](07_RPi.md)
+	+ [RPi-Setup](RPi-Setup.md)
 
 ## ILT
 * [Tools für WebApps](tools_webapp.md)

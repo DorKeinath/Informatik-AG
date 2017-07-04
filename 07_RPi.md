@@ -2,6 +2,7 @@
 
 ## PL: Einstieg in das RPi
 [Mehr Kurz-Infos](http://xcosx.de/raspberry-pi-30-e-pc-mit-vielen-einsatzmoeglichkeiten/)
+
 [RPi-Setup](RPi-Setup.md)
 
 ### Beispiel-Projekt Media-Station
@@ -83,7 +84,7 @@ import RPi.GPIO as GPIO
 from time import sleep
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(12, GPIO.OUT)
-print('Diese Programm kann man mit Strg+C abbrechen ohne das RPi kaputt zu machen.')
+print('Diese Programm kann man mit Strg+C abbrechen, ohne das RPi kaputt zu machen.')
 try:
   while True:
     GPIO.output(12, GPIO.HIGH)
