@@ -49,6 +49,7 @@ Das heißt, dass man eine Option oder einen Dateinamen eingeben kann, aber nicht
 * `mv`
 * `rm`
 * `clear`
+* `tree`
 * `find`
 * `echo`
 * `firefox`
@@ -77,7 +78,7 @@ Das heißt, dass man eine Option oder einen Dateinamen eingeben kann, aber nicht
 
 ## Security mit dem Terminal
 
-Mit dem Terminal kann man seine [Sicherheit hinsichtlich seines Datenschutzes](https://secitem.at/blog/terminal-tipps) erhöhen. 
+Mit dem Terminal kann man seine [Sicherheit hinsichtlich seines Datenschutzes](https://secitem.at/blog/terminal-tipps) erhöhen.
 
 # Bash-Skripte
 

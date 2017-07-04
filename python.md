@@ -40,7 +40,9 @@
 
 [Deutsches Python-Tutorial](http://py-tutorial-de.readthedocs.io/de/python-3.3/)
 
-[Noch ein Deutsches Python-Tutorial](http://pythonbuch.com/index.html)
+[Noch ein deutsches Python-Tutorial](http://pythonbuch.com/index.html)
+
+[Noch ein deutscher Python-Kurs](http://www.python-kurs.eu/python3_kurs.php)
 
 [Englisches Python-Tutorial](https://learnpythonthehardway.org/book/)
 
@@ -348,6 +350,10 @@ Von außen sehen die Schüler nur die anwesenden Lehrer.
 
 > DorKeinath
 -->
+
+### PL: Funktionen
+<!-- TODO -->
+
 
 ## Einstieg in Kivy (GUI)
 Es gibt mehrere Möglichkeiten, für dein Python-Programm eine graphische Oberfläche (GUI - Graphical User Interface) zu programmieren. Als Standard ist [Tkinter](https://wiki.python.org/moin/GuiProgramming) vorinstalliert. [appJar](http://appjar.info/) klingt für einen leichten Einstieg richtig attraktiv, muss ich bei Gelegenheit ausprobieren. Im Folgenden beschreibe ich [Kivy](https://kivy.org/), was den Vorteil hat, dass es mit dem [Kivy-Launcher](https://kivy.org/#download) direkt auf dem (Android-)Handy ausgeführt werden kann.
