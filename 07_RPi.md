@@ -2,6 +2,7 @@
 
 ## PL: Einstieg in das RPi
 [Mehr Kurz-Infos](http://xcosx.de/raspberry-pi-30-e-pc-mit-vielen-einsatzmoeglichkeiten/)
+[RPi-Setup](RPi-Setup.md)
 
 ### Beispiel-Projekt Media-Station
 Mit dem RPi kann man zum Beispiel ein [altes Radio zum Internetradio](http://hackaday.com/2015/05/03/tubenetradio-project-modernizes-1959-tube-radio/) aufpeppeln.
@@ -69,6 +70,26 @@ Tipp zur Code-Optimierung: Die GPIO-Befehle verstehen auch Listen:
 led_pins = [11,12]
 GPIO.setup(led_pins, GPIO.OUT)
 GPIO.output(led_pins, 0)
+```
+
+## PL: Try
+
+Wenn man ein Programm abbricht, weil es nicht so funktioniert wie man sich das gedacht hat, hat man ein Problem: Das `cleanup` wird nicht aufgerufen. Verwendet daher bitte den `try-except`-Befehl im folgenden Beispiel:
+
+```python
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+import RPi.GPIO as GPIO
+from time import sleep
+GPIO.setmode(GPIO.BOARD)
+GPIO.setup(12, GPIO.OUT)
+print('Diese Programm kann man mit Strg+C abbrechen ohne das RPi kaputt zu machen.')
+try:
+  while True:
+    GPIO.output(12, GPIO.HIGH)
+    sleep(5)
+except KeyboardInterrupt:
+  GPIO.cleanup()
 ```
 
 <!--
