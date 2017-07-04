@@ -12,13 +12,14 @@ Die zip-Datei entpacken
 
 ## Image auf die SD-Karte schreiben
 Anscheinend braucht man für Pixel 8 GB.
+
 Entweder man verwendet das Terminal:
 
 `sudo dd bs=4M if=2017-03-02-raspbian-jessie.img of=/dev/sdc`
 
 wobei `sdc` die SD-Karte sein muss. Kann man mit `df` oder mit `GParted` herausfinden.
 
-Oder noch leichter (unter Linux Mint vorinstalliert) mit **gnome-disks**. Da sieht man automatisch, wie lang's noch geht :-)
+Oder man verwendet (unter Linux Mint vorinstalliert) **gnome-disks**. Da sieht man automatisch, wie lang's noch geht :-)
 
 ## Tastatur umstellen
 Menü/Preferences/Mouse and Keyboard Settings/Keyboard Layout auf Germany/German einstellen.
