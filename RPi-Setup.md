@@ -2,7 +2,8 @@
 
 ## Download
 https://www.raspberrypi.org/downloads/raspbian/
-Ich denke für Schüler ist die Desktop-Variante (Pixel) einen Tick besser. Wobei es schon auch einen gewissen Reiz hat, nur mit dem Terminal arbeiten zu können. Die Tastatureinstellung ist mit Pixel schneller gemacht :-)
+
+Ich denke für Schüler ist die Desktop-Variante (Pixel) ein bisschen besser. Wobei es schon auch einen gewissen Reiz hat, nur mit dem Terminal arbeiten zu können. Die Tastatureinstellung ist mit Pixel schneller gemacht :-)
 
 ## Entpacken
 Die zip-Datei entpacken
