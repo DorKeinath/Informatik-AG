@@ -356,7 +356,7 @@ Von außen sehen die Schüler nur die anwesenden Lehrer.
 
 
 ## Einstieg in Kivy (GUI)
-Es gibt mehrere Möglichkeiten, für dein Python-Programm eine graphische Oberfläche (GUI - Graphical User Interface) zu programmieren. Als Standard ist [Tkinter](https://wiki.python.org/moin/GuiProgramming) vorinstalliert. [appJar](http://appjar.info/) klingt für einen leichten Einstieg richtig attraktiv, muss ich bei Gelegenheit ausprobieren. Im Folgenden beschreibe ich [Kivy](https://kivy.org/), was den Vorteil hat, dass es mit dem [Kivy-Launcher](https://kivy.org/#download) direkt auf dem (Android-)Handy ausgeführt werden kann.
+Es gibt mehrere Möglichkeiten, für dein Python-Programm eine graphische Oberfläche (GUI - Graphical User Interface) zu programmieren. Als Standard ist [Tkinter](https://wiki.python.org/moin/GuiProgramming) vorinstalliert. [gui zero](https://lawsie.github.io/guizero/about/) und [appJar](http://appjar.info/) klingen für einen leichten Einstieg richtig attraktiv, muss ich bei Gelegenheit ausprobieren. Im Folgenden beschreibe ich [Kivy](https://kivy.org/), was den Vorteil hat, dass es mit dem [Kivy-Launcher](https://kivy.org/#download) direkt auf dem (Android-)Handy ausgeführt werden kann.
 
 Das **Hallo-Welt-Programm** auf der Kivy-Homepage sieht so aus:
 

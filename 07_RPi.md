@@ -1,11 +1,32 @@
 # Raspberry Pi
 
+<!-- MDTOC maxdepth:6 firsth1:1 numbering:0 flatten:0 bullets:1 updateOnSave:1 -->
+
+- [Raspberry Pi](#raspberry-pi)   
+   - [PL: Einstieg in das RPi](#pl-einstieg-in-das-rpi)   
+      - [Beispiel-Projekt](#beispiel-projekt)   
+      - [PINs und GPIOs/BCMs](#pins-und-gpiosbcms)   
+      - [LED-Test](#led-test)   
+      - [LED on/off](#led-onoff)   
+   - [EA: Arbeitsaufträge mit LEDs](#ea-arbeitsaufträge-mit-leds)   
+   - [PL: Try](#pl-try)   
+   - [PL: Inputs](#pl-inputs)   
+   - [PA: Arbeitsaufträge mit Schalter](#pa-arbeitsaufträge-mit-schalter)   
+      - [EA: 7-Segmentanzeige](#ea-7-segmentanzeige)   
+   - [Langzeit-Projekte](#langzeit-projekte)   
+      - [Lärmanzeige](#lärmanzeige)   
+      - [Alarmanlage für die Schublade](#alarmanlage-für-die-schublade)   
+      - [LED-Kette](#led-kette)   
+      - [Weitere Projekt-Ideen](#weitere-projekt-ideen)   
+
+<!-- /MDTOC -->
+
 ## PL: Einstieg in das RPi
 [Mehr Kurz-Infos](http://xcosx.de/raspberry-pi-30-e-pc-mit-vielen-einsatzmoeglichkeiten/)
 
 [RPi-Setup](RPi-Setup.md)
 
-### Beispiel-Projekt Media-Station
+### Beispiel-Projekt
 Mit dem RPi kann man zum Beispiel ein [altes Radio zum Internetradio](http://hackaday.com/2015/05/03/tubenetradio-project-modernizes-1959-tube-radio/) aufpeppeln.
 
 Material-Bedarf:
@@ -19,16 +40,18 @@ Material-Bedarf:
 
 ### PINs und GPIOs/BCMs
 
-Was welcher PIN kann: [1](https://www.raspberrypi.org/documentation/usage/gpio-plus-and-raspi2/images/physical-pin-numbers.png), [2](http://elinux.org/RPi_Low-level_peripherals#Model_A.2B.2C_B.2B_and_B2), [3](https://pinout.xyz/pinout/pin12_gpio18#)
+Was welcher PIN kann: [1](https://www.raspberrypi.org/documentation/usage/gpio-plus-and-raspi2/images/physical-pin-numbers.png), [2](http://elinux.org/RPi_Low-level_peripherals#Model_A.2B.2C_B.2B_and_B2), [3](https://pinout.xyz/pinout/pin12_gpio18#), [4](http://www.panu.it/raspberry/)
 
-Informationen zum [Steckbrett](https://www.youtube.com/watch?v=tSFfa4bXGDE)
+Informationen zum [Steckbrett](https://www.youtube.com/watch?v=tSFfa4bXGDE).
+
+Die Stromversorgung über den USB-Anschluss des Computers reicht für die ersten Stunden.
 
 ### LED-Test
 <!-- 28 -->
 Wie viel Ampere sind 1200 mA?
 Wenn eine LED 1,8-2 V und 10-20 mA zum Leuchten benötigt, welchen Widerstand muss man dann verwenden? (U = RI)
 
-Bei der LED geht der *kürzere* Fuß (negativ/Kathode) zum Widerstand.
+Bei der [LED](https://de.wikipedia.org/wiki/Leuchtdiode#Betrieb_und_Anschluss) geht der *kürzere Fuß zur Erde* (zum niedrigeren Potential, zur Kathode, zum Minus). Ob der Widerstand rechts oder links ist, ist egal.
 
 ![](files/LED-Test.png)
 
@@ -57,7 +80,7 @@ sleep(5)
 GPIO.cleanup()
 ```
 
-## PA: Arbeitsaufträge mit LEDs
+## EA: Arbeitsaufträge mit LEDs
 
 1. Lasse eine LED fünf Mal für je eine Sekunde blinken. (Code-Länge = 10 Zeilen.)
 1. Lasse zwei LEDs fünf Mal für je eine Sekunde blinken.
@@ -86,21 +109,89 @@ GPIO.setmode(GPIO.BOARD)
 GPIO.setup(12, GPIO.OUT)
 print('Diese Programm kann man mit Strg+C abbrechen, ohne das RPi kaputt zu machen.')
 try:
-  while True:
-    GPIO.output(12, GPIO.HIGH)
-    sleep(5)
+    while True:
+        GPIO.output(12, GPIO.HIGH)
+        sleep(1)
+        GPIO.output(12, GPIO.LOW)
+        sleep(1)
 except KeyboardInterrupt:
-  GPIO.cleanup()
+    GPIO.cleanup()
 ```
 
-<!--
 ## PL: Inputs
-http://maxembedded.com/2014/07/using-raspberry-pi-gpio-using-python/ -->
+Jetzt wollen wir einen GPIO als Input verwenden, d.h. wir wollen am angeschlossenen Pin (Nr. 11) messen, ob der Stromkreis zwischen 3,3 V, Schalter, Widerstand und Erde gerade offen oder geschlossen ist. Bei geschlossenem Stromkreis, also wenn die Taste gedrückt ist, soll die LED leuchten.
+
+Den Schalter, auch Taster oder Pushbutton genannt, schließen wir bitte so an. Auf den kleinen Widerstand (200-400 Ohm) kann man zwar verzichten, wenn man richtig programmiert, aber wer weiß, ob man nicht einmal unkonzentriert ist und dann das RaspberryPi einen Kurzschluss bekommt.
+
+![](files/Schalter-01.png)
+
+
+```python
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+import RPi.GPIO as GPIO
+from time import sleep
+GPIO.setmode(GPIO.BOARD)
+GPIO.setup(12, GPIO.OUT)
+# Um vom Pin 11 ein Signal empfangen zu können, wird er hier als GPIO.IN definiert. Das `pull_up_down` definiert einen Vorwiderstand, der einen Kurzschluss verhindert.
+GPIO.setup(11, GPIO.IN, pull_up_down = GPIO.PUD_DOWN)
+print('Diese Programm kann man mit Strg+C abbrechen, ohne das RPi kaputt zu machen.')
+try:
+    while True:
+        # In der Variable taster_int wird der Wert gespeichert, den der Pin 11 liefert, also ob der Stromkreis geschlossen ist oder nicht, also entweder 0 oder 1.
+        taster_int = GPIO.input(11)
+        if taster_int == 1:
+            GPIO.output(12, GPIO.HIGH)
+        else:
+            GPIO.output(12, GPIO.LOW)
+except KeyboardInterrupt:
+    GPIO.cleanup()
+```
+
+Verwendet man die ausgelesene `1` bzw. `0` direkt, braucht man die vier Zeilen der if-Anweisung nicht zu schreiben. Man kann allerdings darüber streiten, ob der Code dann noch besonders gut zu lesen ist.
+```python
+GPIO.output(12, taster_int)
+```
+
+## PA: Arbeitsaufträge mit Schalter
+
+1. Simple **Alarmanlage**: Beim Schließen des Schalters soll eine LED ganz wild blinken.
+1. Auf Tastendruck soll eine **Ampel** für 5 Sekunden auf rot schalten und dann wieder auf grün.
+
+### EA: 7-Segmentanzeige
+7-Segmentanzeigen werden bei ihren mittleren Pins an der Erde angeschlossen. Den Rest der [Pinbelegung unserer 7-Segmentanzeigen](https://www.mymakerstuff.de/2016/05/12/die-siebensegmentanzeige#cc-m-header-13360887824) könnt ihr hier nachlesen oder selbst herausfinden. Verwende bitte 470-Ohm-Widerstände und `try`.
+
+![](files/7-Segmentanzeige-01.png)
+
+Wenn du z.B. von 0 bis 9 hochzählen lassen willst oder eine Tastatureingabe eine bestimmte Anzeige bewirken soll, solltest du [Listen und Dictionaries](python.md#pl-kollektionen) bei deiner Programmierung verwenden.
+
+```python
+...
+zeige = ["a","b","ab"]
+pin = {"a":3, "b":5}
+# Auf die Werte greift man mit .values zu
+for i in pin.values():
+    GPIO.output(i,0)
+# Auf die Schlüssel greift man mit eckiger Klammer zu
+for k in range(len(zeige)):
+    for i in zeige[k]:
+        GPIO.output(pin[i],1)    
+sleep(1)
+for i in zeige[]:
+    GPIO.output(pin[i],1)   
+...
+```
+
+[Diese Codierung](https://www.mymakerstuff.de/2016/05/12/die-siebensegmentanzeige#cc-m-header-13360887824) könnte dir helfen, keinen Knoten im Hirn zu bekommen.
 
 
 <div class="page-break"></div>
-
 ## Langzeit-Projekte
+
+Tipp: Die Stationen sehen cooler aus, wenn du keine herkömmlichen Mechaniken verwendest, z.B. statt einem Plastikschalter eine Wäscheklammer.
+
+### Lärmanzeige
+### Alarmanlage für die Schublade
 
 ### LED-Kette
 
@@ -111,6 +202,8 @@ http://maxembedded.com/2014/07/using-raspberry-pi-gpio-using-python/ -->
 * [Lichterkette](http://www.ebay.de/itm/5m-RGB-LED-STRIP-BAND-LEISTE-STRIPE-STREIFEN-LICHTKETTE-LICHT-LICHTER-5050-SMD-/321874918415?hash=item4af13d7c0f:g:Nu8AAOSwHjNWBBBt)
 
 ### Weitere Projekt-Ideen
+
+* Größere 7-Segmentanzeige [1](https://www.rahner-edu.de/mikrocontroller/propeller-controller/7-segment-anzeige/), [2](https://pi-buch.info/7-segment-anzeigen-am-raspberry-pi-ansteuern/)
 
 * [Weitere Projekte auf der offiziellen Seite](https://www.raspberrypi.org/resources/make/)
 

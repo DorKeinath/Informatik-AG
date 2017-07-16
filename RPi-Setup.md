@@ -5,21 +5,25 @@ https://www.raspberrypi.org/downloads/raspbian/
 
 Ich denke für Schüler ist die Desktop-Variante (Pixel) ein bisschen besser. Wobei es schon auch einen gewissen Reiz hat, nur mit dem Terminal arbeiten zu können. Die Tastatureinstellung ist mit Pixel schneller gemacht :-)
 
-## Entpacken
-Die zip-Datei entpacken
+## Prüfen und entpacken
+Die sha1-Checksumme prüfen:
 
-`unzip ...zip`
+`sha1sum 2017...zip`
+
+Die zip-Datei entpacken:
+
+`unzip 2017...zip`
 
 ## Image auf die SD-Karte schreiben
 Anscheinend braucht man für Pixel 8 GB.
 
 Entweder man verwendet das Terminal:
 
-`sudo dd bs=4M if=2017-03-02-raspbian-jessie.img of=/dev/sdc`
+`sudo dd bs=4M if=2017-07-05-raspbian-jessie.img of=/dev/sdc; sync`
 
 wobei `sdc` die SD-Karte sein muss. Kann man mit `df` oder mit `GParted` herausfinden.
 
-Oder man verwendet (unter Linux Mint vorinstalliert) **gnome-disks**. Da sieht man automatisch, wie lang's noch geht :-)
+Oder man verwendet eine [andere Installationsmethode](https://www.raspberrypi.org/downloads/raspbian/).
 
 ## Tastatur umstellen
 Menü/Preferences/Mouse and Keyboard Settings/Keyboard Layout auf Germany/German einstellen.
