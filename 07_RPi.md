@@ -8,11 +8,11 @@
       - [PINs und GPIOs/BCMs](#pins-und-gpiosbcms)   
       - [LED-Test](#led-test)   
       - [LED on/off](#led-onoff)   
-   - [EA: Arbeitsaufträge mit LEDs](#ea-arbeitsaufträge-mit-leds)   
+   - [EA/PA: Arbeitsaufträge mit LEDs](#eapa-arbeitsaufträge-mit-leds)   
    - [PL: Try](#pl-try)   
    - [PL: Inputs](#pl-inputs)   
-   - [PA: Arbeitsaufträge mit Schalter](#pa-arbeitsaufträge-mit-schalter)   
-      - [EA: 7-Segmentanzeige](#ea-7-segmentanzeige)   
+   - [EA/PA: Arbeitsaufträge mit Schalter](#eapa-arbeitsaufträge-mit-schalter)   
+      - [EA/PA: 7-Segmentanzeige](#eapa-7-segmentanzeige)   
    - [Langzeit-Projekte](#langzeit-projekte)   
       - [Lärmanzeige](#lärmanzeige)   
       - [Alarmanlage für die Schublade](#alarmanlage-für-die-schublade)   
@@ -80,7 +80,7 @@ sleep(5)
 GPIO.cleanup()
 ```
 
-## EA: Arbeitsaufträge mit LEDs
+## EA/PA: Arbeitsaufträge mit LEDs
 
 1. Lasse eine LED fünf Mal für je eine Sekunde blinken. (Code-Länge = 10 Zeilen.)
 1. Lasse zwei LEDs fünf Mal für je eine Sekunde blinken.
@@ -153,12 +153,12 @@ Verwendet man die ausgelesene `1` bzw. `0` direkt, braucht man die vier Zeilen d
 GPIO.output(12, taster_int)
 ```
 
-## PA: Arbeitsaufträge mit Schalter
+## EA/PA: Arbeitsaufträge mit Schalter
 
 1. Simple **Alarmanlage**: Beim Schließen des Schalters soll eine LED ganz wild blinken.
 1. Auf Tastendruck soll eine **Ampel** für 5 Sekunden auf rot schalten und dann wieder auf grün.
 
-### EA: 7-Segmentanzeige
+### EA/PA: 7-Segmentanzeige
 7-Segmentanzeigen werden bei ihren mittleren Pins an der Erde angeschlossen. Den Rest der [Pinbelegung unserer 7-Segmentanzeigen](https://www.mymakerstuff.de/2016/05/12/die-siebensegmentanzeige#cc-m-header-13360887824) könnt ihr hier nachlesen oder selbst herausfinden. Verwende bitte 470-Ohm-Widerstände und `try`.
 
 ![](files/7-Segmentanzeige-01.png)
