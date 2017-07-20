@@ -441,7 +441,7 @@ Um eine Aktion des Anwenders deines Programms in deinem Python-Code verarbeiten 
 
 **Zugriff auf Text** kann man auf mehreren Wegen kriegen. Um einer Funktion `funktion(self, etwas)` etwas aus einem Widget zu übergeben, verwendet man bei einem Event `root.funktion(etwas)`. Will man wiederum einen damit kreierten Output in einem Widget anzeigen, muss man entweder eine `StringProperty()` definieren oder den Output dem Widget über seine `id` zuweisen. Aus dem folgenden Beispiel kannst du beide Methoden ablesen. (Du solltest allerdings nicht beide Methoden vermischen, sonst funktioniert das was du willst vielleicht nur bei der ersten Ausführung, da die Variable mit einem konkreten Wert überschrieben wird.)
 
-kivy_widget-access.py
+kivy_widget-access.py:
 ```python
 #!/usr/bin/env python3
 import kivy
@@ -468,7 +468,7 @@ if __name__ == '__main__':
     WidgetAccessApp().run()
 ```
 
-widgetaccess.kv
+widgetaccess.kv:
 ```python
 <Login>:
     BoxLayout:
@@ -519,6 +519,65 @@ Um auf andere Dinge als Text zuzugreifen, z.B. auf den Zustand eines Buttons, ob
 ### EA: BMI-Rechner
 Erweitere deinen BMI-Rechner zu einer App mit graphischer Oberfläche.
 
+### EA: Verschlüsselung
+Informiere dich auf [cryptool-online](http://cryptool-online.org/) über Techniken, einen Text zu verschlüsseln und programmiere dein eigenes Verschlüsselungsprogramm.
+Deine Grundstruktur könnte wie folgt aussehen.
+
+verschluesselung.py:
+```python
+#!/usr/bin/env python3
+import kivy
+from kivy.app import App
+from kivy.uix.boxlayout import BoxLayout
+from kivy.properties import StringProperty
+
+class Verschluesselung(BoxLayout):
+    ausgabe = StringProperty('Es ist noch kein Text zum Übersitzen eingegeben.')
+
+    def verschluessle(self,eingabe):
+        self.ausgabe = 'Dein Text ist:\n' + eingabe + '\nRichtig?!'
+
+class VerschluesselungsappApp(App):
+    def build(self):
+        return Verschluesselung()
+
+if __name__ == '__main__':
+    VerschluesselungsappApp().run()
+```
+
+verschluesselungsapp.kv:
+```python
+<Verschluesselung>:
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 100
+        spacing: 20
+
+        Label:
+            text: 'Hier kann ein Klartext eingegeben werden'
+            font_size: '20sp'
+
+        TextInput:
+            id: eingabe
+            text: ''
+            focus: True
+
+        Button:
+            text: "Jetzt verschlüsseln"
+            # size_hint: 1, 3
+            background_color:  .5, .6, .8, 1
+            on_press: root.verschluessle(eingabe.text)
+
+        Label:
+            text: root.ausgabe
+            bold: True
+            color: .8, .8, 0, 1
+```
+
 ### EA: Vertiefung
-Um eine App mit mehreren Fenstern zu programmieren, bietet sich der [Screen Manager](https://kivy.org/docs/api-kivy.uix.screenmanager.html) an. Weitere Möglichkeiten von Python und Kivy erfährst du, wenn du die [Examples](https://kivy.org/docs/gettingstarted/intro.html#)
-studierst. Hilfe kannst du dir bei [stackoverflow.com](http://stackoverflow.com/questions/tagged/kivy?sort=votes&pageSize=15) holen.
+Um eine App mit mehreren Fenstern zu programmieren, bietet sich der [Screen Manager](https://kivy.org/docs/api-kivy.uix.screenmanager.html) an.
+
+Weitere Möglichkeiten von Python und Kivy erfährst du, wenn du die [Examples](https://kivy.org/docs/gettingstarted/intro.html#)
+studierst.
+
+Hilfe kannst du dir bei [stackoverflow.com](http://stackoverflow.com/questions/tagged/kivy?sort=votes&pageSize=15) holen.

@@ -23,7 +23,7 @@ Entweder man verwendet das Terminal:
 
 wobei `sdc` die SD-Karte sein muss. Kann man mit `df` oder mit `GParted` herausfinden.
 
-Oder man verwendet eine [andere Installationsmethode](https://www.raspberrypi.org/downloads/raspbian/).
+Oder man verwendet eine [andere Installationsmethode](https://www.raspberrypi.org/downloads/raspbian/), z.B. mit [NOOBS](https://www.raspberrypi.org/downloads/noobs/) oder [Etcher](https://etcher.io/?ref=etcher_footer).
 
 ## Tastatur umstellen
 Menü/Preferences/Mouse and Keyboard Settings/Keyboard Layout auf Germany/German einstellen.
