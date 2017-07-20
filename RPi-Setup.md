@@ -1,3 +1,10 @@
+<!-- MDTOC maxdepth:1 firsth1:1 numbering:0 flatten:0 bullets:1 updateOnSave:1 -->
+
+- [Raspberry Pi Setup mit Raspbian](#raspberry-pi-setup-mit-raspbian)   
+- [Raspberry Pi Setup mit KivyPie](#raspberry-pi-setup-mit-kivypie)   
+
+<!-- /MDTOC -->
+
 # Raspberry Pi Setup mit Raspbian
 
 ## Download
@@ -53,3 +60,32 @@ Unter LITE ist nur Python2 installiert. Hier also evtl. noch
 Manche empfehlen noch
 
 `sudo apt-get install python-dev`
+
+# Raspberry Pi Setup mit KivyPie
+
+Es gibt ein Debian-Image, das Kivy vorinstalliert hat.
+
+## Download
+http://kivypie.mitako.eu/kivy-download.html
+
+## Image auf die SD-Karte schreiben
+s.o.
+
+## Zugangsdaten
+Name: sysop
+Passwort: posys
+
+## Desktop starten
+startx
+
+## Tastatur umstellen
+Ein Desktop-Terminal starten und folgendes eingeben:
+`setxkbmap de`
+
+## SD-Karte mounten
+z.B. so:
+```
+dmesg
+mkdir /mnt/sdkarte
+mount /dev/sda1 /mnt/sdkarte
+```
