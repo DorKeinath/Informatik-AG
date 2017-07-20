@@ -14,6 +14,7 @@
    - [EA/PA: Arbeitsaufträge mit Schalter](#eapa-arbeitsaufträge-mit-schalter)   
       - [EA/PA: 7-Segmentanzeige](#eapa-7-segmentanzeige)   
    - [Langzeit-Projekte](#langzeit-projekte)   
+      - [Morse-Code](#morse-code)   
       - [Lärmanzeige](#lärmanzeige)   
       - [Alarmanlage für die Schublade](#alarmanlage-für-die-schublade)   
       - [LED-Kette](#led-kette)   
@@ -190,7 +191,11 @@ for i in zeige[]:
 
 Tipp: Die Stationen sehen cooler aus, wenn du keine herkömmlichen Mechaniken verwendest, z.B. statt einem Plastikschalter eine Wäscheklammer.
 
+### Morse-Code
+Schreibe ein Programm, das Text zu Morse-Code übersetzt und die LED in entsprechendem Rhythmus blinken lässt.
+
 ### Lärmanzeige
+
 ### Alarmanlage für die Schublade
 
 ### LED-Kette
