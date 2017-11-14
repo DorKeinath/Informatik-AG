@@ -7,3 +7,6 @@
   margin-top: 8px;
 }
 
+.fa-facebook::before, .fa-twitter::before, .fa-share-alt::before {
+    font-size: 0px;
+}
