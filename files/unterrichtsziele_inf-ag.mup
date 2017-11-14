@@ -1,0 +1,488 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "1": {
+      "title": "Informatik-AG",
+      "id": 1,
+      "ideas": {
+        "13": {
+          "title": "Quellcode",
+          "id": 9,
+          "ideas": {
+            "1": {
+              "title": "Darstellende Auszeichnungssprache\n(format specific coding)",
+              "id": 7,
+              "ideas": {
+                "1": {
+                  "title": "CSS",
+                  "id": 8
+                }
+              },
+              "attr": {}
+            },
+            "3": {
+              "title": "Programmiersprache",
+              "id": 13,
+              "ideas": {
+                "2": {
+                  "title": "Bash",
+                  "id": 15,
+                  "attr": {}
+                },
+                "12": {
+                  "title": "Python",
+                  "id": 14,
+                  "ideas": {},
+                  "attr": {}
+                }
+              }
+            },
+            "0.5": {
+              "title": "Beschreibende Auszeichnungssprachen\n(content specific coding)",
+              "id": 6,
+              "ideas": {
+                "1": {
+                  "title": "Markdown",
+                  "id": 2,
+                  "attr": {}
+                },
+                "2": {
+                  "title": "LaTeX",
+                  "id": 4,
+                  "attr": {}
+                }
+              },
+              "attr": {}
+            }
+          },
+          "attr": {
+            "parentConnector": {
+              "color": "#00534e",
+              "themeAutoColor": "#00534e"
+            }
+          }
+        },
+        "-1": {
+          "title": "Teamwork",
+          "id": 10,
+          "attr": {
+            "parentConnector": {
+              "color": "#ffdf55",
+              "themeAutoColor": "#ffdf55"
+            }
+          }
+        },
+        "-12": {
+          "title": "Arbeitsweise und Denken eines Programmierers",
+          "id": 11,
+          "attr": {
+            "parentConnector": {
+              "color": "#ff9900",
+              "themeAutoColor": "#ff9900"
+            }
+          }
+        },
+        "-22": {
+          "title": "Kreativität",
+          "id": 12,
+          "attr": {
+            "parentConnector": {
+              "color": "#0088b2",
+              "themeAutoColor": "#0088b2"
+            }
+          }
+        }
+      },
+      "attr": {
+        "parentConnector": {
+          "color": "#00534e",
+          "themeAutoColor": "#00534e"
+        }
+      }
+    }
+  },
+  "title": "Informatik-AG",
+  "attr": {
+    "theme": "productivity"
+  },
+  "theme": {
+    "name": "MindMup Productivity",
+    "noAnimations": true,
+    "layout": {
+      "orientation": "standard",
+      "spacing": {
+        "h": 25,
+        "v": 3
+      }
+    },
+    "autoColors": [
+      "#00534e",
+      "#ff9900",
+      "#ffdf55",
+      "#0088b2",
+      "#810000",
+      "#86C0EA",
+      "#9C006B",
+      "#95B90B",
+      "#0457A8",
+      "#EE9DC3"
+    ],
+    "node": [
+      {
+        "name": "default",
+        "cornerRadius": 3,
+        "border": {
+          "type": "underline"
+        },
+        "shadow": [
+          {
+            "color": "transparent"
+          }
+        ],
+        "text": {
+          "margin": 3,
+          "alignment": "left",
+          "maxWidth": 700,
+          "color": "#757575",
+          "lightColor": "#EEEEEE",
+          "darkColor": "#000000",
+          "font": {
+            "lineSpacing": 2,
+            "lineSpacingPx": 2.6,
+            "size": 9,
+            "sizePx": 12,
+            "weight": "light"
+          }
+        },
+        "connections": {
+          "default": {
+            "h": "nearest",
+            "v": "base"
+          },
+          "autoColored": {
+            "h": "nearest",
+            "v": "base"
+          }
+        },
+        "decorations": {
+          "height": 20,
+          "edge": "left",
+          "overlap": false,
+          "position": "center"
+        }
+      },
+      {
+        "name": "level_1",
+        "cornerRadius": 10,
+        "backgroundColor": "#22AAE0",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "transparent",
+            "width": 1
+          }
+        },
+        "connections": {
+          "style": "autoColored",
+          "childstyle": "autoColored",
+          "default": {
+            "h": "nearest",
+            "v": "center"
+          },
+          "autoColored": {
+            "h": "nearest",
+            "v": "center"
+          }
+        },
+        "text": {
+          "margin": 5,
+          "color": "#EEEEEE",
+          "font": {
+            "lineSpacing": 6,
+            "lineSpacingPx": 7.8,
+            "size": 14,
+            "sizePx": 20,
+            "weight": "light"
+          }
+        }
+      },
+      {
+        "name": "level_2",
+        "text": {
+          "color": "#0288D1",
+          "font": {
+            "lineSpacing": 2,
+            "lineSpacingPx": 2.6,
+            "size": 12,
+            "sizePx": 16,
+            "weight": "light"
+          }
+        },
+        "connections": {
+          "style": "autoColored",
+          "childstyle": "default",
+          "default": {
+            "h": "nearest",
+            "v": "base"
+          },
+          "autoColored": {
+            "h": "nearest",
+            "v": "base"
+          }
+        }
+      },
+      {
+        "name": "level_3",
+        "text": {
+          "color": "#4F4F4F"
+        }
+      },
+      {
+        "name": "level_4",
+        "text": {
+          "color": "#536DFE"
+        }
+      },
+      {
+        "name": "level_5",
+        "text": {
+          "color": "#212121"
+        }
+      },
+      {
+        "name": "level_6",
+        "text": {
+          "color": "#607D8B"
+        }
+      },
+      {
+        "name": "activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#22AAE0",
+            "width": 2,
+            "style": "dashed"
+          }
+        }
+      },
+      {
+        "name": "level_1.activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#EEEEEE",
+            "width": 2,
+            "style": "dashed"
+          }
+        }
+      },
+      {
+        "name": "selected",
+        "shadow": [
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 1,
+              "height": 0
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": -1,
+              "height": 0
+            },
+            "radius": 0
+          },
+          {
+            "color": "#22AAE0",
+            "offset": {
+              "width": 4,
+              "height": 0
+            },
+            "radius": 0
+          },
+          {
+            "color": "#22AAE0",
+            "offset": {
+              "width": -4,
+              "height": 0
+            },
+            "radius": 0
+          }
+        ]
+      },
+      {
+        "name": "collapsed",
+        "shadow": [
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 4
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          }
+        ]
+      },
+      {
+        "name": "collapsed.selected",
+        "shadow": [
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 1,
+              "height": 0
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": -1,
+              "height": 0
+            },
+            "radius": 0
+          },
+          {
+            "color": "#22AAE0",
+            "offset": {
+              "width": 4,
+              "height": 0
+            },
+            "radius": 0
+          },
+          {
+            "color": "#22AAE0",
+            "offset": {
+              "width": -4,
+              "height": 0
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 4
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          }
+        ]
+      }
+    ],
+    "connector": {
+      "default": {
+        "type": "compact-s-curve",
+        "label": {
+          "position": {
+            "ratio": 0.4
+          },
+          "backgroundColor": "transparent",
+          "borderColor": "transparent",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 8,
+              "sizePx": 11,
+              "weight": "light"
+            }
+          }
+        },
+        "line": {
+          "color": "theme_inherit",
+          "width": 2
+        }
+      },
+      "autoColored": {
+        "type": "straight",
+        "label": {
+          "position": {
+            "ratio": 0.4
+          },
+          "backgroundColor": "transparent",
+          "borderColor": "transparent",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 8,
+              "sizePx": 11,
+              "weight": "light"
+            }
+          }
+        },
+        "line": {
+          "color": "theme-auto-color",
+          "width": 2
+        }
+      }
+    }
+  }
+}

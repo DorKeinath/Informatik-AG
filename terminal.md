@@ -61,12 +61,16 @@ Das heißt, dass man eine Option oder einen Dateinamen eingeben kann, aber nicht
 * `vi`
 * `cat`
 * `apt`
-* `df -h`
 * `ifconfig`
 * `which`
 * `whereis`
 * `locate`
 * `rsync`
+* `history`
+* `sudo !!`
+* `df -h`
+* `cat /proc/partitions`
+* `dmesg`
 
 ## Spielereien
 * `curl wttr.in/bretten`

@@ -34,9 +34,12 @@
 <!-- /MDTOC -->
 
 # Python
+## Warum Python
+Python die Programmiersprache mit der **übersichtlichsten** Struktur. Außerdem [erzeugt sie wenig Haßgefühle](https://www.heise.de/developer/meldung/Stack-Overflow-veroeffentlicht-eine-Liste-der-meistgehassten-Programmiersprachen-3877098.html)
+
 ## Links
 
-### Tutorials
+### Tutorials und Bücher
 
 [Deutsches Python-Tutorial](http://py-tutorial-de.readthedocs.io/de/python-3.3/)
 
