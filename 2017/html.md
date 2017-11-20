@@ -1,12 +1,13 @@
 CSS & HTML
 ==========
 
-## Informationen
-**HTML** ist die Auszeichnungssprache für die Darstellung von Seiten in Browsern wie Firefox. Um den Inhalt vom Styling zu trennen, verwendet man für das Styling **CSS** (Cascading Style Sheets).
-
-
 ## PL
-Die ersten Schritte zur ersten eigenen Internetseite geht der Lehrer mit ihnen offline:
+
+Bridge: Im Browser den Quelltext des Gitbooks anschauen und über 'Element untersuchen' CSS betrachten.
+
+> **HTML** ist die Auszeichnungssprache für die Darstellung von Seiten in Browsern wie Firefox. Um den Inhalt vom Styling zu trennen, verwendet man für das Styling **CSS** (Cascading Style Sheets).
+
+Die ersten Schritte zur ersten eigenen Internetseite geht der Lehrer mit den Schülern offline:
 
 Ordner mit `*.html` und `*.css`, Editor, Browser.
 
@@ -17,10 +18,6 @@ Selektor_1, Selektor_2 {
 Eigenschaft1: Wert;
 Eigenschaft2: Wert;
 }
-```
-
-```css
-
 ```
 
 ## EA: Erste HTML-Seite

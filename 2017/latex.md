@@ -26,5 +26,7 @@ Zum Beispiel
 - Sinus, Kosinus, ...
 - Vektoren: Geradengleichung
 
+## Link-Tipps
+
 - [LaTeX-Code](https://de.wikipedia.org/wiki/Hilfe:TeX)
 - [GeoGebra](https://www.geogebra.org/apps)
