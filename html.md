@@ -13,3 +13,5 @@ Danach verwenden die Schüler [Mozilla Thimble](https://thimble.mozilla.org/). D
 [Meine Thimble-Anleitung](https://d157rqmxrxj6ey.cloudfront.net/xcosx/13719/)
 
 [Anleitung zu Transition](http://webkrauts.de/artikel/2011/css-3-im-praxistest-transition)
+
+ [Vektorgrafiken](https://www.w3schools.com/graphics/svg_intro.asp)
