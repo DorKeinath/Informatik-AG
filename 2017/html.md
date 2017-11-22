@@ -36,7 +36,6 @@ Erstelle eine HTML-Seite, die die folgenden *Tags* enthält
 ## Link-Tipps
 
 * [w3schools HTML](https://www.w3schools.com/tags/tag_hn.asp)
-* [w3schools CSS](http://www.w3schools.com/cssref/pr_background-color.asp)
 * [Mozilla Thimble](https://thimble.mozilla.org/) bzw. [Meine Thimble-Anleitung](https://d157rqmxrxj6ey.cloudfront.net/xcosx/13719/)
 * [Vektorgrafiken](https://www.w3schools.com/graphics/svg_intro.asp)
 * [Zeichenreferenz](https://wiki.selfhtml.org/wiki/Referenz:HTML/Zeichenreferenz)

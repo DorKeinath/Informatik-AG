@@ -5,6 +5,8 @@
 * [Markdown](2017/markdown.md)
 * [LaTeX](2017/latex.md)
 * [HTML](2017/html.md)
+* [CSS](2017/css.md)
+* [Projekt Internetseite](2017/projekt_internetseite.md)
 
 ## 2016
 * [Markdown](markdown.md)
