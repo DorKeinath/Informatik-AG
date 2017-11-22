@@ -3,6 +3,13 @@
 
 ## EA: Ideenfindung
 
+Gesucht ist ein Thema für deine erste Internetseite. Du sollst nicht ewig viel Zeit investieren, weshalb es gut wäre, wenn du bei deiner Themenwahl nicht nach den Sternen greifen würdest.
+
+Beispiele:
+
+- Deine **Lieblingsrezepte**
+- Deine **Lieblingssprüche**
+
 Beantworte in der Datei `planung_internetseite.md` die folgenden Fragen:
 
 - Was möchte ich darstellen? (Thema, Inhalt)
@@ -11,11 +18,6 @@ Beantworte in der Datei `planung_internetseite.md` die folgenden Fragen:
 - Welche Ansprüche hat meine Zielgruppe an meine Internetseite?
 - Welche Medien will ich auf meiner Internetseite einbetten?
   - Woher bekomme ich diese Medien und darf ich sie auf meiner Internetseite verwenden?
-
-Beispiele:
-
-- Deine **Lieblingsrezepte**
-- Deine **Lieblingssprüche**
 
 ## EA: Mockup
 
@@ -29,7 +31,7 @@ Skizziere auf einem Blatt Papier, wie du dir das Layout deiner Internetseite vor
 
 Erstelle in deinem GitBook eine neue Datei namens `mockup.md` und füge ein Foto deines Mockups ein.
 
-Verlinke deine `Planung.md`, `mockup.md` und alle Dateien deiner Unterseiten im Inhaltsverzeichnis (`SUMMARY.md`), damit man alles in deinem GitBook lesen kann.
+Verlinke deine `planung_internetseite.md`, `mockup.md` und alle Dateien deiner Unterseiten im Inhaltsverzeichnis (`SUMMARY.md`), damit man alles in deinem GitBook lesen kann.
 
 Wer sich die Mühe machen will, statt per Hand mit einem Programm zu skizzieren, kann [Maqetta](https://github.com/maqetta) verwenden.
 
