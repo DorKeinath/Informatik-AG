@@ -1,10 +1,13 @@
 # Git mit GitHub
 
-[GitHub](https://github.com/) bietet die Möglichkeit an, eine Internetseite unter einer Domain der Form `username.github.io` zu veröffentlichen. Dazu kann man wie folgt vorgehen.
+[GitHub](https://github.com/) bietet die Möglichkeit an, eine Internetseite unter einer Domain der Form *username.github.io* zu veröffentlichen. Dazu kann man wie folgt vorgehen.
+
+Was hier verwendet wird ist das Programm namens [Git](https://de.wikipedia.org/wiki/Git). Es ist ein Standardprogramm zum Arbeiten mit Versionskontrolle und dem Terminal.
+GitHub ist eine Plattform, auf der Code gehostet werden kann. Extrem viele OpenSource-Programme nutzen GitHub.
 
 1. Sich auf der Internetseite von GitHub einloggen
 1. Auf `New repository` klicken.
-1. Unter `Repository name` seinen Benutzernamen verwenden, um `username.github.io` anzulegen.
+1. Unter `Repository name` seinen Benutzernamen verwenden, um **username.github.io** anzulegen.
 1. Auf dem PC in das Verzeichnis gehen, in dem die `index.html` liegt.
 1. Hier das Terminal öffnen und die auf der GitHub-Seite vorgeschlagenen Befehle eingeben, z.B.
 
