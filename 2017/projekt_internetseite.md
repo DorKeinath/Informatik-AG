@@ -39,7 +39,3 @@ Wer sich die Mühe machen will, statt per Hand mit einem Programm zu skizzieren,
 ## EA: Programmieren
 
 Schreibe deine Seite mit HTML und CSS.
-
-## Link-Tipps
-
-* [Material Design und Color Tool](https://material.io/guidelines/style/color.html#)

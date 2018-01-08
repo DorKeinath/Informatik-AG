@@ -10,5 +10,16 @@ Die Schüler stylen ihr GitBook, indem sie Code in die CSS-Datei schreiben.
 
 ## Link-Tipps
 
-* [w3schools CSS](http://www.w3schools.com/cssref/pr_background-color.asp)
+* [w3schools/CSS](http://www.w3schools.com/cssref/pr_background-color.asp)
+* [selfhtml/CSS](https://wiki.selfhtml.org/wiki/Schnell-Index/CSS)
 * [Web-Farben](https://html-color-codes.info/webfarben_hexcodes/)
+* [Material Design und Color Tool](https://material.io/guidelines/style/color.html#)
+
+## PL: Exkurs zu eigenen Schriftarten
+* [Font Awesome: "Download & Customize"](http://fontawesome.io/get-started/)
+Warum die
+
+## PL: Exkurs zu Media Queries
+[Beispiel @media all und @media(max-width:991px)](view-source:http://xcosx.de/css/style.css)
+
+Voransicht im Firefox: *Strg + Shift + M*
