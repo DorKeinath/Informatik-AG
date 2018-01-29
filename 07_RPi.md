@@ -164,8 +164,8 @@ GPIO.output(12, taster_int)
 1. Simple **Alarmanlage**: Beim Schließen des Schalters soll eine LED ganz wild blinken.
 1. Auf Tastendruck soll eine **Ampel** für 5 Sekunden auf rot schalten und dann wieder auf grün.
 
-### EA/PA: 7-Segmentanzeige
-7-Segmentanzeigen werden bei ihren mittleren Pins an der Erde angeschlossen. Den Rest der [Pinbelegung unserer 7-Segmentanzeigen](https://www.mymakerstuff.de/2016/05/12/die-siebensegmentanzeige#cc-m-header-13360887824) könnt ihr hier nachlesen oder selbst herausfinden. Verwende bitte 470-Ohm-Widerstände und `try`.
+## PL: 7-Segmentanzeige
+7-Segmentanzeigen werden bei ihren mittleren Pins an der Erde angeschlossen. Den Rest der [Pinbelegung unserer 7-Segmentanzeigen](https://www.mymakerstuff.de/2016/05/12/die-siebensegmentanzeige#cc-m-header-13360887824) kannst du nachlesen oder selbst herausfinden. Verwende bitte 470-Ohm-Widerstände und wie immer `try`.
 
 ![](files/7-Segmentanzeige-01.png)
 
