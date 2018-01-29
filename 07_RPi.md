@@ -41,7 +41,7 @@ Material-Bedarf:
 1. SD-Karten-Adapter (evtl. für die Installation)
 1. Lautsprecher mit Line-In-Kabel
 
-### PINs und GPIOs/BCMs
+## PL: PINs und GPIOs/BCMs
 
 Was welcher PIN kann: [1](https://www.raspberrypi.org/documentation/usage/gpio-plus-and-raspi2/images/physical-pin-numbers.png), [2](http://elinux.org/RPi_Low-level_peripherals#Model_A.2B.2C_B.2B_and_B2), [3](https://pinout.xyz/pinout/pin12_gpio18#), [4](http://www.panu.it/raspberry/)
 
@@ -49,7 +49,7 @@ Informationen zum [Steckbrett](https://www.youtube.com/watch?v=tSFfa4bXGDE).
 
 Die Stromversorgung über den USB-Anschluss des Computers reicht für die ersten Stunden.
 
-### LED-Test
+## PL: LED-Test
 <!-- 28 -->
 > Wie viel Ampere sind 1200 mA?
 
@@ -61,7 +61,7 @@ Bei der [LED](https://de.wikipedia.org/wiki/Leuchtdiode#Betrieb_und_Anschluss) g
 
 ![](files/LED-Test.png)
 
-### LED on/off
+##PL: LED on/off
 <!-- 49 -->
 ![](files/LED-01.png)
 
