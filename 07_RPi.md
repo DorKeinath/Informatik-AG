@@ -27,6 +27,8 @@
 
 [RPi-Setup](RPi-Setup.md)
 
+Ich habe für die Vorbereitung der folgenden Unterrichtsstunden übrigens das [Skript von Volker](https://ask.linuxmuster.net/t/raspberry-pi-im-unterricht/1818) verwendet.
+
 ### Beispiel-Projekt
 Mit dem RPi kann man zum Beispiel ein [altes Radio zum Internetradio](http://hackaday.com/2015/05/03/tubenetradio-project-modernizes-1959-tube-radio/) aufpeppeln.
 
@@ -49,8 +51,11 @@ Die Stromversorgung über den USB-Anschluss des Computers reicht für die ersten
 
 ### LED-Test
 <!-- 28 -->
-Wie viel Ampere sind 1200 mA?
-Wenn eine LED 1,8-2 V und 10-20 mA zum Leuchten benötigt, welchen Widerstand muss man dann verwenden? (U = RI)
+> Wie viel Ampere sind 1200 mA?
+
+> Wenn eine LED die Beschriftung **2 V, 10 mA** trägt, welchen Widerstand muss man dann (mindestens) verwenden?
+
+[Lösung](https://www.raspberrypi.org/forums/viewtopic.php?t=96908)
 
 Bei der [LED](https://de.wikipedia.org/wiki/Leuchtdiode#Betrieb_und_Anschluss) geht der *kürzere Fuß zur Erde* (zum niedrigeren Potential, zur Kathode, zum Minus). Ob der Widerstand rechts oder links ist, ist egal.
 

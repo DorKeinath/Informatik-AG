@@ -9,6 +9,8 @@
 * [Projekt Internetseite](2017/projekt_internetseite.md)
 * [Git mit GitHub](2017/git.md)
 * [Arten von Internetseiten](2017/arten_von_internetseiten.md)
+* [RPi](07_RPi.md)
+	+ [RPi-Setup](RPi-Setup.md)
 
 ## 2016
 * [Markdown](markdown.md)
