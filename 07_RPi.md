@@ -2,10 +2,10 @@
 
 <!-- MDTOC maxdepth:2 firsth1:2 numbering:0 flatten:0 bullets:1 updateOnSave:1 -->
 
-- [Einstieg in das RPi](#einstieg-in-das-rpi)   
-   - [Beispiel-Projekt](#beispiel-projekt)   
+- [Einstieg](#einstieg)   
 - [PINs und GPIOs/BCMs](#pins-und-gpiosbcms)   
 - [LED-Test](#led-test)   
+- [LED an/aus](#led-anaus)   
    - [Arbeitsaufträge mit LEDs](#arbeitsaufträge-mit-leds)   
 - [Try](#try)   
 - [Inputs](#inputs)   
@@ -24,14 +24,13 @@
 
 <!-- /MDTOC -->
 
-## Einstieg in das RPi
+## Einstieg
 [Mehr Kurz-Infos](http://xcosx.de/raspberry-pi-30-e-pc-mit-vielen-einsatzmoeglichkeiten/)
 
 [RPi-Setup](RPi-Setup.md)
 
 Ich habe für die Vorbereitung der folgenden Unterrichtsstunden übrigens das [Skript von Volker](https://ask.linuxmuster.net/t/raspberry-pi-im-unterricht/1818) verwendet.
 
-### Beispiel-Projekt
 Mit dem RPi kann man zum Beispiel ein [altes Radio zum Internetradio](http://hackaday.com/2015/05/03/tubenetradio-project-modernizes-1959-tube-radio/) aufpeppeln.
 
 Material-Bedarf:
@@ -63,7 +62,7 @@ Bei der [LED](https://de.wikipedia.org/wiki/Leuchtdiode#Betrieb_und_Anschluss) g
 
 ![](files/LED-Test.png)
 
-##LED on/off
+## LED an/aus
 <!-- 49 -->
 ![](files/LED-01.png)
 
