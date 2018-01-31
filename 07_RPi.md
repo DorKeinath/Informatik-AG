@@ -157,6 +157,41 @@ GPIO.output(12, taster_int)
 1. Simple **Alarmanlage**: Beim Schließen des Schalters soll eine LED ganz wild blinken.
 1. Auf Tastendruck soll eine **Ampel** für 5 Sekunden auf rot schalten und dann wieder auf grün.
 
+## PL: LED dimmen
+
+Für das Dimmen kann man die Pulweitenmodulation (PWM) benutzen. Ein Puls besteht aus Breite (Zeit, 50 Hz entspricht 20 ms) und Höhe (Intensität).
+
+Es wird empfohlen, den *GPIO18* zu verwenden, weil er *Hardware-PWM* unterstützt.
+
+Im Wesentlichen wird ein Objekt mit einer bestimmten (PWM-)Frequenz definiert, gestartet und mit `ChangeDutyCycle(i)` auf die Helligkeit `i` gesetzt ($$ 0 \leq i \leq 100 $$).
+
+```python
+import RPi.GPIO as GPIO
+from import time import sleep
+GPIO. setmode(GPIO.BOARD)
+GPIO.setup(18,GPIO.OUT)
+# Ein Objekt p wird mit PWM definiert. 18 ist der Pin, 50 ist Frequenz 50 Hz. 0,5 Hz sind 2 Sekunden.
+p = GPIO.PWM(18,50)
+# Das Objekt p wird gestartet, wobei 0 bedeutet, dass die Höhe 0 ist. 50 würde bedeuten, dass der Puls zu 50 % auf hight gesetzt wäre.
+p.start(0)
+try:
+    # Im Folgenden wird die LED abwechselnd heller und dunkler.
+    while True:
+        # Die letzte Ziffer in range gibt die Schritte an, mit der die Zahlen i von 0 bis 100 in jedem Schritt wachsen.
+        for i in range(0,101,5):
+            # Jetzt ändern wir die Helligkeit. ChangeDutyCycle erwartet eine Zahl (int oder float).
+            p.ChangeDutyCycle(i)
+            # Verzögerung:
+            sleep(0.1)
+        for i in range(100,-1,-5):
+            p.ChangeDutyCycle(i)
+            sleep(0.1)
+except KeyboardInterrupt:
+    # Beendet die PWM:
+    p.stop()
+    GPIO.cleanup()
+```    
+
 ## PL: 7-Segmentanzeige
 7-Segmentanzeigen werden bei ihren mittleren Pins an der Erde angeschlossen. Den Rest der [Pinbelegung unserer 7-Segmentanzeigen](https://www.mymakerstuff.de/2016/05/12/die-siebensegmentanzeige#cc-m-header-13360887824) kannst du nachlesen oder selbst herausfinden. Verwende bitte 470-Ohm-Widerstände und wie immer `try`.
 
@@ -182,6 +217,43 @@ for i in zeige[]:
 ```
 
 [Diese Codierung](https://www.mymakerstuff.de/2016/05/12/die-siebensegmentanzeige#cc-m-header-13360887824) könnte dir helfen, keinen Knoten im Hirn zu bekommen.
+
+## PL: Kamera
+
+Um die Kamera benutzen zu können, muss man bei
+
+```bash
+sudo raspi-config
+```
+unter *camera* dieselbe durch Auswahl von **Enable** aktivieren. Speichern und ein Neustart sind nicht verkehrt.
+
+**Bilder** kann man aufnehmen mit:
+
+```bash
+raspistill -o bild.jpg
+```
+
+Eine **Video** der Länge 10 Sekunden kann man z.B. aufnehmen mit:
+
+```bash
+raspivid -o video1.h264 -t 10000
+```
+Anschauen kann man ein Video mittels:
+
+```bash
+omxplayer video.h264
+```
+
+Weitere Informationen:
+* [Offizielle Rpi-Seite](https://www.raspberrypi.org/documentation/raspbian/applications/camera.md)
+* [Video aus Bilder erstellen](https://trevorappleton.blogspot.de/2013/11/creating-time-lapse-camera-with.html)
++ [Kamera als Bewegungsmelder](www.pcpro.co.uk/features/386086/make-a-motion-sensing-camera-with-the-raspberry-pi)
+* [Weitere Anleitungen zur Kamera](http://kampis-elektroecke.de/?page_id=4129)
+
+## EA/PA: Arbeitsaufträge mit der Kamera
+
+* Programmiere einen Fotoapparat, d.h. durch einen Taster soll ein Bild aufgenommen werden.
+
 
 
 <div class="page-break"></div>
