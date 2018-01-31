@@ -1,19 +1,27 @@
 # Raspberry Pi
 
-<!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:0 orderedList:0 -->
+<!-- MDTOC maxdepth:2 firsth1:2 numbering:0 flatten:0 bullets:1 updateOnSave:1 -->
 
-- [PL: Einstieg in das RPi](#pl-einstieg-in-das-rpi)
-- [PL: PINs und GPIOs/BCMs](#pl-pins-und-gpiosbcms)
-- [PL: LED-Test](#pl-led-test)
-- [PL: LED on/off](#pl-led-onoff)
-- [EA/PA: Arbeitsaufträge mit LEDs](#eapa-arbeitsaufträge-mit-leds)
-- [PL: Try](#pl-try)
-- [PL: Inputs](#pl-inputs)
-- [EA/PA: Arbeitsaufträge mit Schalter](#eapa-arbeitsaufträge-mit-schalter)
-- [PL: 7-Segmentanzeige](#pl-7-segmentanzeige)
-- [Langzeit-Projekte](#langzeit-projekte)
+- [PL: Einstieg in das RPi](#pl-einstieg-in-das-rpi)   
+   - [Beispiel-Projekt](#beispiel-projekt)   
+- [PL: PINs und GPIOs/BCMs](#pl-pins-und-gpiosbcms)   
+- [PL: LED-Test](#pl-led-test)   
+- [EA/PA: Arbeitsaufträge mit LEDs](#eapa-arbeitsaufträge-mit-leds)   
+- [PL: Try](#pl-try)   
+- [PL: Inputs](#pl-inputs)   
+- [EA/PA: Arbeitsaufträge mit Schalter](#eapa-arbeitsaufträge-mit-schalter)   
+- [PL: LED dimmen](#pl-led-dimmen)   
+- [PL: 7-Segmentanzeige](#pl-7-segmentanzeige)   
+- [PL: Kamera](#pl-kamera)   
+- [EA/PA: Arbeitsaufträge mit der Kamera](#eapa-arbeitsaufträge-mit-der-kamera)   
+- [Langzeit-Projekte](#langzeit-projekte)   
+   - [Morse-Code](#morse-code)   
+   - [Lärmanzeige](#lärmanzeige)   
+   - [Alarmanlage für die Schublade](#alarmanlage-für-die-schublade)   
+   - [LED-Kette](#led-kette)   
+   - [Weitere Projekt-Ideen](#weitere-projekt-ideen)   
 
-<!-- /TOC -->
+<!-- /MDTOC -->
 
 ## PL: Einstieg in das RPi
 [Mehr Kurz-Infos](http://xcosx.de/raspberry-pi-30-e-pc-mit-vielen-einsatzmoeglichkeiten/)
