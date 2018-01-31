@@ -2,19 +2,19 @@
 
 <!-- MDTOC maxdepth:2 firsth1:2 numbering:0 flatten:0 bullets:1 updateOnSave:1 -->
 
-- [PL: Einstieg in das RPi](#pl-einstieg-in-das-rpi)   
+- [Einstieg in das RPi](#einstieg-in-das-rpi)   
    - [Beispiel-Projekt](#beispiel-projekt)   
-- [PL: PINs und GPIOs/BCMs](#pl-pins-und-gpiosbcms)   
-- [PL: LED-Test](#pl-led-test)   
-   - [EA/PA: Arbeitsaufträge mit LEDs](#eapa-arbeitsaufträge-mit-leds)   
-- [PL: Try](#pl-try)   
-- [PL: Inputs](#pl-inputs)   
-   - [EA/PA: Arbeitsaufträge mit Schalter](#eapa-arbeitsaufträge-mit-schalter)   
-- [PL: LED dimmen](#pl-led-dimmen)   
+- [PINs und GPIOs/BCMs](#pins-und-gpiosbcms)   
+- [LED-Test](#led-test)   
+   - [Arbeitsaufträge mit LEDs](#arbeitsaufträge-mit-leds)   
+- [Try](#try)   
+- [Inputs](#inputs)   
+   - [Arbeitsaufträge mit Schalter](#arbeitsaufträge-mit-schalter)   
+- [LED dimmen](#led-dimmen)   
    - [Arbeitsauftrag](#arbeitsauftrag)   
-- [PL: 7-Segmentanzeige](#pl-7-segmentanzeige)   
-- [PL: Kamera](#pl-kamera)   
-   - [EA/PA: Arbeitsaufträge mit der Kamera](#eapa-arbeitsaufträge-mit-der-kamera)   
+- [7-Segmentanzeige](#7-segmentanzeige)   
+- [Kamera](#kamera)   
+   - [Arbeitsaufträge mit der Kamera](#arbeitsaufträge-mit-der-kamera)   
 - [Langzeit-Projekte](#langzeit-projekte)   
    - [Morse-Code](#morse-code)   
    - [Lärmanzeige](#lärmanzeige)   
@@ -24,7 +24,7 @@
 
 <!-- /MDTOC -->
 
-## PL: Einstieg in das RPi
+## Einstieg in das RPi
 [Mehr Kurz-Infos](http://xcosx.de/raspberry-pi-30-e-pc-mit-vielen-einsatzmoeglichkeiten/)
 
 [RPi-Setup](RPi-Setup.md)
@@ -43,7 +43,7 @@ Material-Bedarf:
 1. SD-Karten-Adapter (evtl. für die Installation)
 1. Lautsprecher mit Line-In-Kabel
 
-## PL: PINs und GPIOs/BCMs
+## PINs und GPIOs/BCMs
 
 Was welcher PIN kann: [1](https://www.raspberrypi.org/documentation/usage/gpio-plus-and-raspi2/images/physical-pin-numbers.png), [2](http://elinux.org/RPi_Low-level_peripherals#Model_A.2B.2C_B.2B_and_B2), [3](https://pinout.xyz/pinout/pin12_gpio18#), [4](http://www.panu.it/raspberry/)
 
@@ -51,7 +51,7 @@ Informationen zum [Steckbrett](https://www.youtube.com/watch?v=tSFfa4bXGDE).
 
 Die Stromversorgung über den USB-Anschluss des Computers reicht für die ersten Stunden.
 
-## PL: LED-Test
+## LED-Test
 <!-- 28 -->
 > Wie viel Ampere sind 1200 mA?
 
@@ -63,7 +63,7 @@ Bei der [LED](https://de.wikipedia.org/wiki/Leuchtdiode#Betrieb_und_Anschluss) g
 
 ![](files/LED-Test.png)
 
-##PL: LED on/off
+##LED on/off
 <!-- 49 -->
 ![](files/LED-01.png)
 
@@ -88,7 +88,7 @@ sleep(5)
 GPIO.cleanup()
 ```
 
-### EA/PA: Arbeitsaufträge mit LEDs
+### Arbeitsaufträge mit LEDs
 
 1. Lasse eine LED fünf Mal für je eine Sekunde blinken. (Code-Länge = 10 Zeilen.)
 1. Lasse zwei LEDs fünf Mal für je eine Sekunde blinken.
@@ -104,7 +104,7 @@ GPIO.setup(led_pins, GPIO.OUT)
 GPIO.output(led_pins, 0)
 ```
 
-## PL: Try
+## Try
 
 Wenn man ein Programm abbricht, weil es nicht so funktioniert wie man sich das gedacht hat, hat man ein Problem: Das `cleanup` wird nicht aufgerufen. Verwendet daher bitte den `try-except`-Befehl im folgenden Beispiel:
 
@@ -126,7 +126,7 @@ except KeyboardInterrupt:
     GPIO.cleanup()
 ```
 
-## PL: Inputs
+## Inputs
 Jetzt wollen wir einen GPIO als Input verwenden, d.h. wir wollen am angeschlossenen Pin (Nr. 11) messen, ob der Stromkreis zwischen 3,3 V, Schalter, Widerstand und Erde gerade offen oder geschlossen ist. Bei geschlossenem Stromkreis, also wenn die Taste gedrückt ist, soll die LED leuchten.
 
 Den Schalter, auch Taster oder Pushbutton genannt, schließen wir bitte so an. Auf den kleinen Widerstand (200-400 Ohm) kann man zwar verzichten, wenn man richtig programmiert, aber wer weiß, ob man nicht einmal unkonzentriert ist und dann das RaspberryPi einen Kurzschluss bekommt.
@@ -161,12 +161,12 @@ Verwendet man die ausgelesene `1` bzw. `0` direkt, braucht man die vier Zeilen d
 GPIO.output(12, taster_int)
 ```
 
-### EA/PA: Arbeitsaufträge mit Schalter
+### Arbeitsaufträge mit Schalter
 
 1. Simple **Alarmanlage**: Beim Schließen des Schalters soll eine LED ganz wild blinken.
 1. Auf Tastendruck soll eine **Ampel** für 5 Sekunden auf rot schalten und dann wieder auf grün.
 
-## PL: LED dimmen
+## LED dimmen
 
 Für das Dimmen kann man die Pulweitenmodulation (PWM) benutzen. Ein Puls besteht aus Breite (Zeit, 50 Hz entspricht 20 ms) und Höhe (Intensität).
 
@@ -205,7 +205,7 @@ except KeyboardInterrupt:
 
 * Lasse zwei LEDs sich gegenläufig dimmen.
 
-## PL: 7-Segmentanzeige
+## 7-Segmentanzeige
 7-Segmentanzeigen werden bei ihren mittleren Pins an der Erde angeschlossen. Den Rest der [Pinbelegung unserer 7-Segmentanzeigen](https://www.mymakerstuff.de/2016/05/12/die-siebensegmentanzeige#cc-m-header-13360887824) kannst du nachlesen oder selbst herausfinden. Verwende bitte 470-Ohm-Widerstände und wie immer `try`.
 
 ![](files/7-Segmentanzeige-01.png)
@@ -231,7 +231,7 @@ for i in zeige[]:
 
 [Diese Codierung](https://www.mymakerstuff.de/2016/05/12/die-siebensegmentanzeige#cc-m-header-13360887824) könnte dir helfen, keinen Knoten im Hirn zu bekommen.
 
-## PL: Kamera
+## Kamera
 
 Um die Kamera benutzen zu können, muss man bei
 
@@ -263,7 +263,7 @@ Weitere Informationen:
 + [Kamera als Bewegungsmelder](www.pcpro.co.uk/features/386086/make-a-motion-sensing-camera-with-the-raspberry-pi)
 * [Weitere Anleitungen zur Kamera](http://kampis-elektroecke.de/?page_id=4129)
 
-### EA/PA: Arbeitsaufträge mit der Kamera
+### Arbeitsaufträge mit der Kamera
 
 * Programmiere einen Fotoapparat, d.h. durch einen Taster soll ein Bild aufgenommen werden.
 
