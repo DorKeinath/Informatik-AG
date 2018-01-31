@@ -6,14 +6,15 @@
    - [Beispiel-Projekt](#beispiel-projekt)   
 - [PL: PINs und GPIOs/BCMs](#pl-pins-und-gpiosbcms)   
 - [PL: LED-Test](#pl-led-test)   
-- [EA/PA: Arbeitsaufträge mit LEDs](#eapa-arbeitsaufträge-mit-leds)   
+   - [EA/PA: Arbeitsaufträge mit LEDs](#eapa-arbeitsaufträge-mit-leds)   
 - [PL: Try](#pl-try)   
 - [PL: Inputs](#pl-inputs)   
-- [EA/PA: Arbeitsaufträge mit Schalter](#eapa-arbeitsaufträge-mit-schalter)   
+   - [EA/PA: Arbeitsaufträge mit Schalter](#eapa-arbeitsaufträge-mit-schalter)   
 - [PL: LED dimmen](#pl-led-dimmen)   
+   - [Arbeitsauftrag](#arbeitsauftrag)   
 - [PL: 7-Segmentanzeige](#pl-7-segmentanzeige)   
 - [PL: Kamera](#pl-kamera)   
-- [EA/PA: Arbeitsaufträge mit der Kamera](#eapa-arbeitsaufträge-mit-der-kamera)   
+   - [EA/PA: Arbeitsaufträge mit der Kamera](#eapa-arbeitsaufträge-mit-der-kamera)   
 - [Langzeit-Projekte](#langzeit-projekte)   
    - [Morse-Code](#morse-code)   
    - [Lärmanzeige](#lärmanzeige)   
@@ -87,7 +88,7 @@ sleep(5)
 GPIO.cleanup()
 ```
 
-## EA/PA: Arbeitsaufträge mit LEDs
+### EA/PA: Arbeitsaufträge mit LEDs
 
 1. Lasse eine LED fünf Mal für je eine Sekunde blinken. (Code-Länge = 10 Zeilen.)
 1. Lasse zwei LEDs fünf Mal für je eine Sekunde blinken.
@@ -160,7 +161,7 @@ Verwendet man die ausgelesene `1` bzw. `0` direkt, braucht man die vier Zeilen d
 GPIO.output(12, taster_int)
 ```
 
-## EA/PA: Arbeitsaufträge mit Schalter
+### EA/PA: Arbeitsaufträge mit Schalter
 
 1. Simple **Alarmanlage**: Beim Schließen des Schalters soll eine LED ganz wild blinken.
 1. Auf Tastendruck soll eine **Ampel** für 5 Sekunden auf rot schalten und dann wieder auf grün.
@@ -199,6 +200,10 @@ except KeyboardInterrupt:
     p.stop()
     GPIO.cleanup()
 ```    
+
+### Arbeitsauftrag
+
+* Lasse zwei LEDs sich gegenläufig dimmen.
 
 ## PL: 7-Segmentanzeige
 7-Segmentanzeigen werden bei ihren mittleren Pins an der Erde angeschlossen. Den Rest der [Pinbelegung unserer 7-Segmentanzeigen](https://www.mymakerstuff.de/2016/05/12/die-siebensegmentanzeige#cc-m-header-13360887824) kannst du nachlesen oder selbst herausfinden. Verwende bitte 470-Ohm-Widerstände und wie immer `try`.
@@ -258,7 +263,7 @@ Weitere Informationen:
 + [Kamera als Bewegungsmelder](www.pcpro.co.uk/features/386086/make-a-motion-sensing-camera-with-the-raspberry-pi)
 * [Weitere Anleitungen zur Kamera](http://kampis-elektroecke.de/?page_id=4129)
 
-## EA/PA: Arbeitsaufträge mit der Kamera
+### EA/PA: Arbeitsaufträge mit der Kamera
 
 * Programmiere einen Fotoapparat, d.h. durch einen Taster soll ein Bild aufgenommen werden.
 
