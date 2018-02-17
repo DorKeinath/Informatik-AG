@@ -99,12 +99,14 @@ from time import asctime
 print(asctime())
 ```
 
-Weiteres Beispiel: Um den Bildschirm zu löschen, kannst du
+Weiteres Beispiel: Um den Bildschirm zu löschen, kannst du den folgenden Code verwenden:
 
 ```
-from os import system
-system("clear")
+from subprocess import call
+call("clear")
 ```
+
+(Früher hat man `from os import system` und `system("clear")` oder `os.popen` verwendet. Weitere Informationen zu [subprocess](http://www.admin-magazin.de/Das-Heft/2012/05/Kommandos-mit-dem-Subprocess-Modul-aufrufen))
 
 Ein ganzes **Python-Skript** bzw. **Python-Programm** test.py schreiben und mit `python3 test.py` (oder - falls das Shabang vorhanden ist - mit `./test.py`) starten.
 

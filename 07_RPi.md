@@ -276,9 +276,20 @@ Tipp: Die Stationen sehen cooler aus, wenn du keine herkömmlichen Mechaniken ve
 ### Morse-Code
 Schreibe ein Programm, das Text zu Morse-Code übersetzt und die LED in entsprechendem Rhythmus blinken lässt.
 
+### Wäscheklammer-Klavier
+
 ### Lärmanzeige
 
 ### Alarmanlage für die Schublade
+
+### Verstellbare LED-Uhr
+7-Segmentanzeigen, die die Uhrzeit anzeigen. Die Uhr kann man per Handy steuern, um z.B. morgens im Kinderzimmer eine falsche Uhrzeit anzuzeigen. Tipp: Steuerung per XMPP-Nachricht.
+
+### Licht-Harfe
+Mittels Abstandssensor wird Abstands-Intervallen verschiedene Töne zugeordnet.
+
+### Digitales Gästebuch
+Gäste können eine E-Mail schreiben, und deren Nachricht erscheint direkt auf dem Bildschirm/Beamer.
 
 ### LED-Kette
 

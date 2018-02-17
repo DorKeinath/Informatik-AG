@@ -16,11 +16,9 @@
 * `ls -lhtra` (long humanreadable zeitgeordnet umgekehrt versteckte)
 * Tabulator zur Syntaxergänzung.
 * Pfeil-nach-oben zum Aufruf der letzten Eingabe.
-* Pfeiltasten, `history` mit `!` und Strg+R für bisherige Aufrufe.
-* Strg+C zum Beenden eines Prozesses.
+* Pfeiltasten, `history` mit `!` gefolgt von der Nummer, und *Strg+R* für bisherige Aufrufe.
+* *Strg+C* zum Beenden eines Prozesses.
 * `sudo`
-
-
 
 ## Übungen in EA/PA
 Wofür sind die folgenden Befehle gut? Finde heraus, wofür die Befehle verwendet werden können und probiere den einen oder anderen Befehl aus.
@@ -80,9 +78,16 @@ Das heißt, dass man eine Option oder einen Dateinamen eingeben kann, aber nicht
 * `cat /dev/urandom | hexdump -C | grep "ca fe"`
 * [Freakige Befehle](https://www.commandlinefu.com/commands/browse/sort-by-votes)
 
+## Weitere Beispiele
+* `ls -1 *.jpg | parallel -j 3 convert '{}' -resize 1920x -quality 60 '{}_1920px'`
+* `sudo pm-hibernate`
+* [http://www.shellbefehle.de/bash-tipps/](http://www.shellbefehle.de/bash-tipps/)
+
 ## Security mit dem Terminal
 
-Mit dem Terminal kann man seine [Sicherheit hinsichtlich seines Datenschutzes](https://secitem.at/blog/terminal-tipps) erhöhen.
+Mit dem Terminal kann man seine [Sicherheit hinsichtlich seines Datenschutzes](https://secitem.at/blog/terminal-tipps) erhöhen. Z.B.
+
+* `diceware -n 4`
 
 # Bash-Skripte
 
