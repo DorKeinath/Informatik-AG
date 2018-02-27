@@ -80,6 +80,7 @@ Das heißt, dass man eine Option oder einen Dateinamen eingeben kann, aber nicht
 
 ## Weitere Beispiele
 * `ls -1 *.jpg | parallel -j 3 convert '{}' -resize 1920x -quality 60 '{}_1920px'`
+* `find \( -iname '*.jpg' -or -iname '*.jpeg' -or -iname '*.gif' -or -iname '*.png' -or -iname '*.bmp' \) |  wc -l`
 * `sudo pm-hibernate`
 * [http://www.shellbefehle.de/bash-tipps/](http://www.shellbefehle.de/bash-tipps/)
 
@@ -87,7 +88,8 @@ Das heißt, dass man eine Option oder einen Dateinamen eingeben kann, aber nicht
 
 Mit dem Terminal kann man seine [Sicherheit hinsichtlich seines Datenschutzes](https://secitem.at/blog/terminal-tipps) erhöhen. Z.B.
 
-* `diceware -n 4`
+* `diceware -n 4` [diceware auf GitHub](https://github.com/ulif/diceware)
+* `find \( -iname '*.jpg' -or -iname '*.jpeg' -or -iname '*.gif' -or -iname '*.png' -or -iname '*.bmp'  \) -print0 | xargs -0 mogrify -strip`
 
 # Bash-Skripte
 

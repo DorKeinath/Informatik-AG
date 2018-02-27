@@ -2,25 +2,25 @@
 
 <!-- MDTOC maxdepth:2 firsth1:2 numbering:0 flatten:0 bullets:1 updateOnSave:1 -->
 
-- [Einstieg](#einstieg)   
-- [PINs und GPIOs/BCMs](#pins-und-gpiosbcms)   
-- [LED-Test](#led-test)   
-- [LED an/aus](#led-anaus)   
-   - [Arbeitsaufträge mit LEDs](#arbeitsaufträge-mit-leds)   
-- [Try](#try)   
-- [Inputs](#inputs)   
-   - [Arbeitsaufträge mit Schalter](#arbeitsaufträge-mit-schalter)   
-- [LED dimmen](#led-dimmen)   
-   - [Arbeitsauftrag](#arbeitsauftrag)   
-- [7-Segmentanzeige](#7-segmentanzeige)   
-- [Kamera](#kamera)   
-   - [Arbeitsaufträge mit der Kamera](#arbeitsaufträge-mit-der-kamera)   
-- [Langzeit-Projekte](#langzeit-projekte)   
-   - [Morse-Code](#morse-code)   
-   - [Lärmanzeige](#lärmanzeige)   
-   - [Alarmanlage für die Schublade](#alarmanlage-für-die-schublade)   
-   - [LED-Kette](#led-kette)   
-   - [Weitere Projekt-Ideen](#weitere-projekt-ideen)   
+- [Einstieg](#einstieg)
+- [PINs und GPIOs/BCMs](#pins-und-gpiosbcms)
+- [LED-Test](#led-test)
+- [LED an/aus](#led-anaus)
+   - [Arbeitsaufträge mit LEDs](#arbeitsaufträge-mit-leds)
+- [Try](#try)
+- [Inputs](#inputs)
+   - [Arbeitsaufträge mit Schalter](#arbeitsaufträge-mit-schalter)
+- [LED dimmen](#led-dimmen)
+   - [Arbeitsauftrag](#arbeitsauftrag)
+- [7-Segmentanzeige](#7-segmentanzeige)
+- [Kamera](#kamera)
+   - [Arbeitsaufträge mit der Kamera](#arbeitsaufträge-mit-der-kamera)
+- [Langzeit-Projekte](#langzeit-projekte)
+   - [Morse-Code](#morse-code)
+   - [Lärmanzeige](#lärmanzeige)
+   - [Alarmanlage für die Schublade](#alarmanlage-für-die-schublade)
+   - [LED-Kette](#led-kette)
+   - [Weitere Projekt-Ideen](#weitere-projekt-ideen)
 
 <!-- /MDTOC -->
 
@@ -125,7 +125,7 @@ except KeyboardInterrupt:
     GPIO.cleanup()
 ```
 
-## Inputs
+## Druck-Taster
 Jetzt wollen wir einen GPIO als Input verwenden, d.h. wir wollen am angeschlossenen Pin (Nr. 11) messen, ob der Stromkreis zwischen 3,3 V, Schalter, Widerstand und Erde gerade offen oder geschlossen ist. Bei geschlossenem Stromkreis, also wenn die Taste gedrückt ist, soll die LED leuchten.
 
 Den Schalter, auch Taster oder Pushbutton genannt, schließen wir bitte so an. Auf den kleinen Widerstand (200-400 Ohm) kann man zwar verzichten, wenn man richtig programmiert, aber wer weiß, ob man nicht einmal unkonzentriert ist und dann das RaspberryPi einen Kurzschluss bekommt.
@@ -198,7 +198,7 @@ except KeyboardInterrupt:
     # Beendet die PWM:
     p.stop()
     GPIO.cleanup()
-```    
+```
 
 ### Arbeitsauftrag
 
@@ -221,10 +221,10 @@ for i in pin.values():
 # Auf die Schlüssel greift man mit eckiger Klammer zu
 for k in range(len(zeige)):
     for i in zeige[k]:
-        GPIO.output(pin[i],1)    
+        GPIO.output(pin[i],1)
 sleep(1)
 for i in zeige[]:
-    GPIO.output(pin[i],1)   
+    GPIO.output(pin[i],1)
 ...
 ```
 

@@ -1,7 +1,19 @@
-<!-- MDTOC maxdepth:1 firsth1:1 numbering:0 flatten:0 bullets:1 updateOnSave:1 -->
+<!-- MDTOC maxdepth:2 firsth1:1 numbering:1 flatten:0 bullets:0 updateOnSave:1 -->
 
-- [Raspberry Pi Setup mit Raspbian](#raspberry-pi-setup-mit-raspbian)   
-- [Raspberry Pi Setup mit KivyPie](#raspberry-pi-setup-mit-kivypie)   
+1. [Raspberry Pi Setup mit Raspbian](#raspberry-pi-setup-mit-raspbian)   
+&emsp;1.1. [Download](#download)   
+&emsp;1.2. [Prüfen und entpacken](#prüfen-und-entpacken)   
+&emsp;1.3. [Image auf die SD-Karte schreiben](#image-auf-die-sd-karte-schreiben)   
+&emsp;1.4. [Tastatur umstellen](#tastatur-umstellen)   
+&emsp;1.5. [Einstellungen für LITE](#einstellungen-für-lite)   
+&emsp;1.6. [Optional](#optional)   
+2. [Raspberry Pi Setup mit KivyPie](#raspberry-pi-setup-mit-kivypie)   
+&emsp;2.1. [Download](#download)   
+&emsp;2.2. [Image auf die SD-Karte schreiben](#image-auf-die-sd-karte-schreiben)   
+&emsp;2.3. [Zugangsdaten](#zugangsdaten)   
+&emsp;2.4. [Desktop starten](#desktop-starten)   
+&emsp;2.5. [Tastatur umstellen](#tastatur-umstellen)   
+&emsp;2.6. [SD-Karte mounten](#sd-karte-mounten)   
 
 <!-- /MDTOC -->
 
@@ -48,6 +60,7 @@ Unter Internationalisation
 ## Optional
 ### Update
 Da das Updaten sonst noch viel ewiger geht, sollte man vorher
+
 1. Wolfram deinstallieren: `sudo apt-get remove wolfram-engine`
 2. `sudo apt-get update`
 3. `sudo apt-get upgrade`
