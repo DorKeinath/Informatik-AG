@@ -27,7 +27,7 @@ Anschauen kann man ein Video mittels:
 ```bash
 omxplayer video.h264
 ```
-Mehr Infos zum [omxplayer](RPi_omx.md)
+Mehr Infos zum [omxplayer](RPi_omx.md).
 
 Weitere Informationen:
 * [Offizielle Rpi-Seite](https://www.raspberrypi.org/documentation/raspbian/applications/camera.md)
