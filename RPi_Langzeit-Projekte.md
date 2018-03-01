@@ -9,6 +9,13 @@ Tipp: Die Stationen sehen cooler aus, wenn du keine herkömmlichen Mechaniken ve
 Schreibe ein Programm, das Text zu Morse-Code übersetzt und die LED in entsprechendem Rhythmus blinken lässt.
 
 ### Wäscheklammer-Klavier
+Wäscheklammer als Schalter[1](https://www.think-ing.de/system/files/unterrichtsmaterialien/gepr%C3%BCfter%20Benutzer/13/aufbau_waescheklammern_schalter.pdf), [2](https://sites.google.com/site/bastelnelektroelektrik/elektro-grundkurs-kinder-jugendliche-led-transistor)
+
+### Reaktionstester
+Sobald eine LED leuchtet, muss man einen Buzzer drücken. Die Zeitdifferenz ist die Reaktionszeit.
+
+### Gesichtserkennung
+Die Kamera macht ein Foto von x Personen, die Software sagt, wie groß x ist.
 
 ### Lärmanzeige
 

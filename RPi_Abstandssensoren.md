@@ -9,9 +9,12 @@ Zum Messen eines Abstandes, kann man verschiedene Typen von [Wegsensoren](https:
 
 [Tutorial zum HC-SR04](https://tutorials-raspberrypi.de/entfernung-messen-mit-ultraschallsensor-hc-sr04/)
 
-Die Bezeichnung **TRIG** ist eine Abkürzung für **Trigger** und bedeutet *Auslöser*. Kommt hier Strom, wird ein Ultraschall-Signal gesendet.
+Auf dem Sensor kann man vier Bezeichnungen *lesen*: VCC, Trig, Echo, GND.
 
-Ein **ECHO** ist ein Hörereignis bei einer verzögerten Schallwelle. Hier wird also das Ultraschall-Signal empfangen.
+* Die Bezeichnung **Trig** ist eine Abkürzung für **Trigger** und bedeutet *Auslöser*. Kommt hier Strom, wird ein Ultraschall-Signal gesendet.
+* Ein **Echo** ist ein Hörereignis bei einer verzögerten Schallwelle. Hier wird also das Ultraschall-Signal empfangen.
+* **GND** steht für Ground.
+* Bei **VCC** wird 3V angelegt.
 
 Das Skript verwendet die BCM-Bezeichnungen. Pin 18 ist z.B. BCM 24. Die Grunddefinition ist statt wie bisher
 ```python
