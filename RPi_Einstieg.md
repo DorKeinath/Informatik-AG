@@ -19,3 +19,4 @@ Material-Bedarf:
 
 * [https://tutorials-raspberrypi.de/](https://tutorials-raspberrypi.de/)
 * [http://raspberrypiguide.de/](http://raspberrypiguide.de/)
+* [http://www.raspberrypi-tutorials.de](http://www.raspberrypi-tutorials.de)

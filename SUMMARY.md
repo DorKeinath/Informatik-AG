@@ -20,6 +20,7 @@
 	+ [Kamera](RPi_Kamera.md)
 	+ [Abstandssensoren](RPi_Abstandssensoren.md)
 	+ [Motoren](RPi_Motoren.md)
+	+ [Mediaplayer](RPi_omx.md)
 	+ [Langzeit-Projekte](RPi_Langzeit-Projekte.md)
 
 ## 2016
