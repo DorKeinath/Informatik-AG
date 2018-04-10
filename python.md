@@ -1,35 +1,35 @@
 # Inhalt
 <!-- MDTOC maxdepth:6 firsth1:0 numbering:1 flatten:1 bullets:0 updateOnSave:1 -->
 
-1. [Links](#links)   
-1.1. [Tutorials](#tutorials)   
-1.2. [Python auf Android](#python-auf-android)   
-2. [Einstieg in Python](#einstieg-in-python)   
-2.1. [PL: Basics](#pl-basics)   
-2.2. [EA: Begrüßung](#ea-begrüßung)   
-2.3. [EA: Potenz-Berechner](#ea-potenz-berechner)   
-2.4. [EA: Kreis-Berechner](#ea-kreis-berechner)   
-2.5. [PL: for](#pl-for)   
-2.6. [PL: if-else](#pl-if-else)   
-2.7. [EA: Passwortabfrage](#ea-passwortabfrage)   
-2.8. [EA: Passwortvirus](#ea-passwortvirus)   
-2.9. [EA: BMI](#ea-bmi)   
-2.10. [PL: while](#pl-while)   
-2.11. [EA: Passwortabfrage mit Brute-Force-Defence](#ea-passwortabfrage-mit-brute-force-defence)   
-2.12. [PL: Kollektionen](#pl-kollektionen)   
-2.13. [PL: Exkurs zu den Bytsequenzen](#pl-exkurs-zu-den-bytsequenzen)   
-2.14. [PL: list](#pl-list)   
-2.15. [EA: Quadratzahlen](#ea-quadratzahlen)   
-2.16. [EA: Schere-Stein-Papier](#ea-schere-stein-papier)   
-2.17. [EA: Satz-Statistik](#ea-satz-statistik)   
-2.18. [EA: Telefonnummern-Suche](#ea-telefonnummern-suche)   
-2.19. [PL: dict](#pl-dict)   
-2.20. [EA: Anwesenheitsampel](#ea-anwesenheitsampel)   
-3. [Einstieg in Kivy (GUI)](#einstieg-in-kivy-gui)   
-3.1. [Widgets und ihr Layout](#widgets-und-ihr-layout)   
-3.2. [Übergabe von Objekten zwischen Python- und Kivy-Code](#übergabe-von-objekten-zwischen-python-und-kivy-code)   
-3.3. [EA: BMI-Rechner](#ea-bmi-rechner)   
-3.4. [EA: Vertiefung](#ea-vertiefung)   
+1. [Links](#links)
+1.1. [Tutorials](#tutorials)
+1.2. [Python auf Android](#python-auf-android)
+2. [Einstieg in Python](#einstieg-in-python)
+2.1. [PL: Basics](#pl-basics)
+2.2. [EA: Begrüßung](#ea-begrüßung)
+2.3. [EA: Potenz-Berechner](#ea-potenz-berechner)
+2.4. [EA: Kreis-Berechner](#ea-kreis-berechner)
+2.5. [PL: for](#pl-for)
+2.6. [PL: if-else](#pl-if-else)
+2.7. [EA: Passwortabfrage](#ea-passwortabfrage)
+2.8. [EA: Passwortvirus](#ea-passwortvirus)
+2.9. [EA: BMI](#ea-bmi)
+2.10. [PL: while](#pl-while)
+2.11. [EA: Passwortabfrage mit Brute-Force-Defence](#ea-passwortabfrage-mit-brute-force-defence)
+2.12. [PL: Kollektionen](#pl-kollektionen)
+2.13. [PL: Exkurs zu den Bytsequenzen](#pl-exkurs-zu-den-bytsequenzen)
+2.14. [PL: list](#pl-list)
+2.15. [EA: Quadratzahlen](#ea-quadratzahlen)
+2.16. [EA: Schere-Stein-Papier](#ea-schere-stein-papier)
+2.17. [EA: Satz-Statistik](#ea-satz-statistik)
+2.18. [EA: Telefonnummern-Suche](#ea-telefonnummern-suche)
+2.19. [PL: dict](#pl-dict)
+2.20. [EA: Anwesenheitsampel](#ea-anwesenheitsampel)
+3. [Einstieg in Kivy (GUI)](#einstieg-in-kivy-gui)
+3.1. [Widgets und ihr Layout](#widgets-und-ihr-layout)
+3.2. [Übergabe von Objekten zwischen Python- und Kivy-Code](#übergabe-von-objekten-zwischen-python-und-kivy-code)
+3.3. [EA: BMI-Rechner](#ea-bmi-rechner)
+3.4. [EA: Vertiefung](#ea-vertiefung)
 
 <!-- /MDTOC -->
 
@@ -106,7 +106,7 @@ from subprocess import call
 call("clear")
 ```
 
-(Früher hat man `from os import system` und `system("clear")` oder `os.popen` verwendet. Weitere Informationen zu [subprocess](http://www.admin-magazin.de/Das-Heft/2012/05/Kommandos-mit-dem-Subprocess-Modul-aufrufen))
+(Früher hat man `from os import system` und `system("clear")` oder `os.popen` verwendet. Weitere Informationen zu [subprocess](http://www.admin-magazin.de/Das-Heft/2012/05/Kommandos-mit-dem-Subprocess-Modul-aufrufen), [weitere Methoden](https://stackoverflow.com/questions/89228/calling-an-external-command-in-python/92395#92395) Terminal-Befehle durch Python auszuführen.)
 
 Ein ganzes **Python-Skript** bzw. **Python-Programm** test.py schreiben und mit `python3 test.py` (oder - falls das Shabang vorhanden ist - mit `./test.py`) starten.
 
@@ -358,6 +358,12 @@ Von außen sehen die Schüler nur die anwesenden Lehrer.
 
 ### PL: Funktionen
 <!-- TODO -->
+
+### Pakete
+
+Will man der Übersichtlichkeit halber sein Programm in verschiedene Dateien aufsplitten, kann man sogenannte Pakete selbst schreiben.
+[https://www.python-kurs.eu/python3_pakete.php](https://www.python-kurs.eu/python3_pakete.php)
+
 
 
 ## Einstieg in Kivy (GUI)

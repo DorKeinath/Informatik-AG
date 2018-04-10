@@ -28,5 +28,6 @@ Zum Beispiel
 
 ## Link-Tipps
 
+- [KaTeX-Code](https://khan.github.io/KaTeX/function-support.html)
 - [LaTeX-Code](https://de.wikipedia.org/wiki/Hilfe:TeX)
 - [GeoGebra](https://www.geogebra.org/apps)

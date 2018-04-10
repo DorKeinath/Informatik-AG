@@ -16,20 +16,20 @@
 * `ls -lhtra` (long humanreadable zeitgeordnet umgekehrt versteckte)
 * Tabulator zur Syntaxergänzung.
 * Pfeil-nach-oben zum Aufruf der letzten Eingabe.
-* Pfeiltasten, `history` mit `!` gefolgt von der Nummer, und *Strg+R* für bisherige Aufrufe.
 * *Strg+C* zum Beenden eines Prozesses.
 * `sudo`
+* Ein `^`, z.B. beim Bearbeiten einer Datei mit `nano` bedeutet die Strg-Taste.
 
 ## Übungen in EA/PA
 Wofür sind die folgenden Befehle gut? Finde heraus, wofür die Befehle verwendet werden können und probiere den einen oder anderen Befehl aus.
 
 Das Minimalziel der Stunde ist es, dass du **Ordner und Datei erstellen und kopieren** kannst.
 
-Es gibt mehrere Möglichkeiten, wie du etwas über einen Befehl x herausfinden kannst:
+Es gibt mehrere Möglichkeiten, wie du etwas über einen Befehl X herausfinden kannst:
 
-1. `whatis x`
-2. `x --help`
-3. `man x`
+1. `whatis X`
+2. `X --help`
+3. `man X`
 
 Zum Beispiel spuckt das Terminal bei `ls --help` so etwas aus wie
 
@@ -62,10 +62,8 @@ Das heißt, dass man eine Option oder einen Dateinamen eingeben kann, aber nicht
 * `ifconfig`
 * `which`
 * `whereis`
-* `locate`
 * `rsync`
 * `history`
-* `sudo !!`
 * `df -h`
 * `cat /proc/partitions`
 * `dmesg`
@@ -78,10 +76,17 @@ Das heißt, dass man eine Option oder einen Dateinamen eingeben kann, aber nicht
 * `cat /dev/urandom | hexdump -C | grep "ca fe"`
 * [Freakige Befehle](https://www.commandlinefu.com/commands/browse/sort-by-votes)
 
+## Effektiver Umgang mit dem Terminal
+* `history`, dann `!` gefolgt von der Nummer, und *Strg+R* für bisherige Aufrufe.
+* `sudo !!`
+* [Aliase](https://askubuntu.com/questions/17536/how-do-i-create-a-permanent-bash-alias) über die Datei `~/.bashrc`.
+* [Dateien durchsuchen] mit `locate` oder `find`: [1](https://wiki.ubuntuusers.de/locate/), [2](https://wiki.ubuntuusers.de/find/), [3](https://www.digitalocean.com/community/tutorials/how-to-use-find-and-locate-to-search-for-files-on-a-linux-vps), [4](http://www.linfo.org/locate.html), [5](https://unix.stackexchange.com/questions/151700/how-to-add-specific-directories-to-updatedb-locate-search-path), [6](https://askubuntu.com/questions/160424/how-do-i-get-mlocate-to-only-index-certain-directories)
+
+
 ## Weitere Beispiele
-* `ls -1 *.jpg | parallel -j 3 convert '{}' -resize 1920x -quality 60 '{}_1920px'`
-* `find \( -iname '*.jpg' -or -iname '*.jpeg' -or -iname '*.gif' -or -iname '*.png' -or -iname '*.bmp' \) |  wc -l`
 * `sudo pm-hibernate`
+* `find \( -iname '*.jpg' -or -iname '*.jpeg' -or -iname '*.gif' -or -iname '*.png' -or -iname '*.bmp' \) |  wc -l`
+* `ls -1 *.jpg | parallel -j 3 convert '{}' -resize 1920x -quality 60 '{}_1920px'`
 * [http://www.shellbefehle.de/bash-tipps/](http://www.shellbefehle.de/bash-tipps/)
 
 ## Security mit dem Terminal

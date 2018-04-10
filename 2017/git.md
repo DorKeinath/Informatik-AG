@@ -19,6 +19,8 @@ git remote add origin https://github.com/DorKeinath/username.github.io.git
 git push -u origin master
 ```
 
+Eine gute vertiefende Anleitung für Git: [https://githowto.com/](https://githowto.com/)
+
 ## Workflow
 
 ```bash
