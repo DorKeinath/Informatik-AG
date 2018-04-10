@@ -14,11 +14,11 @@
 * `pwd`
 * `ls`
 * `ls -lhtra` (long humanreadable zeitgeordnet umgekehrt versteckte)
-* Tabulator zur Syntaxergänzung.
-* Pfeil-nach-oben zum Aufruf der letzten Eingabe.
-* *Strg+C* zum Beenden eines Prozesses.
+* **Tabulator** zur Syntaxergänzung.
+* **Pfeil-nach-oben** zum Aufruf der letzten Eingabe.
+* **Strg+C** zum Beenden eines Prozesses.
 * `sudo`
-* Ein `^`, z.B. beim Bearbeiten einer Datei mit `nano` bedeutet die Strg-Taste.
+* Ein `^`, z.B. beim Bearbeiten einer Datei mit `nano` bedeutet die *Strg-Taste*.
 
 ## Übungen in EA/PA
 Wofür sind die folgenden Befehle gut? Finde heraus, wofür die Befehle verwendet werden können und probiere den einen oder anderen Befehl aus.
@@ -77,7 +77,10 @@ Das heißt, dass man eine Option oder einen Dateinamen eingeben kann, aber nicht
 * [Freakige Befehle](https://www.commandlinefu.com/commands/browse/sort-by-votes)
 
 ## Effektiver Umgang mit dem Terminal
-* `history`, dann `!` gefolgt von der Nummer, und *Strg+R* für bisherige Aufrufe.
+* Bisherige Befehle nochmal aufrufen mit
+    * **Ausrufezeichen** gefolgt von einem Zeichen ruft den letzten Befehl mit diesem Zeichen auf.
+    * `history`, dann `!` gefolgt von der Nummer.
+    * **Strg+R**
 * `sudo !!`
 * [Aliase](https://askubuntu.com/questions/17536/how-do-i-create-a-permanent-bash-alias) über die Datei `~/.bashrc`.
 * [Dateien durchsuchen] mit `locate` oder `find`: [1](https://wiki.ubuntuusers.de/locate/), [2](https://wiki.ubuntuusers.de/find/), [3](https://www.digitalocean.com/community/tutorials/how-to-use-find-and-locate-to-search-for-files-on-a-linux-vps), [4](http://www.linfo.org/locate.html), [5](https://unix.stackexchange.com/questions/151700/how-to-add-specific-directories-to-updatedb-locate-search-path), [6](https://askubuntu.com/questions/160424/how-do-i-get-mlocate-to-only-index-certain-directories)
