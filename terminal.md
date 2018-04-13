@@ -6,9 +6,10 @@
 # Terminal
 [HO](http://www.321tux.de/wp-content/uploads/2010/03/shell-uebersicht.pdf)
 
-[Kurze Einführung auf ubuntuusers](https://wiki.ubuntuusers.de/Shell/Einf%C3%BChrung/)
-
 [Nette Übersicht auf Linuxmint](https://community.linuxmint.com/tutorial/view/244)
+
+Kurze Einführungen auf ubuntuusers: [Shell](https://wiki.ubuntuusers.de/Shell/Einf%C3%BChrung/), [Bash](https://wiki.ubuntuusers.de/Bash/#source-2)
+
 
 ## Einführung im Plenum
 * `pwd`
