@@ -113,11 +113,22 @@ if __name__ == '__main__':
     # Eine Beschreibung des Programms, die beim Aufruf der Hilfe (-h) angezeigt wird.
     parser = argparse.ArgumentParser(description='Dieses Programm erläutert die Funktionsweise von argparse.')
     # Ein klassisches Argument
-    parser.add_argument('-a', dest='argument_eins', type=str, help='Irgend ein Text, den der Benutzer eingeben kann.')
+    parser.add_argument('-a',
+                            dest='argument_eins',
+                            type=str,
+                            help='Irgend ein Text, den der Benutzer eingeben kann.')
     # Ein Positionsargument
-    parser.add_argument('positionsargument', metavar='positionsargument', type=str, help='Irgend ein Text, den der Benutzer hinter dem Dateiname des Programms eingeben muss.')
+    parser.add_argument('positionsargument',
+                            metavar='positionsargument',
+                            type=str,
+                            help='Irgend ein Text, den der Benutzer hinter dem Dateiname des Programms eingeben muss.')
     # Ein Argument das einen bestimmten Wert speichert
-    parser.add_argument('-v', dest='variable', action='store_const', const=True, default=False, help='Speichert in der Variablen args.variable den Wert True.')
+    parser.add_argument('-v',
+                            dest='variable',
+                            action='store_const',
+                            const=True,
+                            default=False,
+                            help='Speichert in der Variablen args.variable den Wert True.')
 
     args = parser.parse_args()
 
