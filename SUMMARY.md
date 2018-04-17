@@ -22,6 +22,14 @@
 	+ [Motoren](RPi_Motoren.md)
 	+ [Mediaplayer](RPi_omx.md)
 	+ [Langzeit-Projekte](RPi_Langzeit-Projekte.md)
+* [Terminal](terminal.md)
++ [Python](Py_Einstieg.md)
+	+ [Dokumentationen](Py_Docs.md)
+	+ [print, help, input, import, type](Py_Basics.md)
+	+ [for, if else, elif, range, Dateien](Py_for.md)
+	+ [while](Py_while.md)
+	+ [Python auf Android](Py_Android.md)
+	+ [Graphische Oberflächen (GUIs)](Py_GUI.md)
 
 ## 2016
 * [Markdown](markdown.md)

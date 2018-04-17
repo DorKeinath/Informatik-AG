@@ -1,6 +1,6 @@
 # Python
 
-## Python-Console und -Skripte + print, help, input, import, type
+## Python-Console und -Skripte, print, help, input, import, type
 
 ### PL: Basics
 
