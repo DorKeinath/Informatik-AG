@@ -95,7 +95,7 @@ from math import pi
 
 ### EA: Terminal-Programm (Für Fortgeschrittene)
 
-Mit Python kann man Terminal-Skripte schreiben, die man mit Argumenten (z.B. `-h`) oder *positional arguements* (z.B. `less datei.txt`) aufrufen kann. Will man sie schön schreiben, verwendet man das Modul `argparse`. Das Modul erzeugt dann auch automatisch eine Hilfe, die der Benutzer des Programms mit dem üblichen `-h` aufrufen kann.
+Mit Python kann man Terminal-Skripte schreiben, die man mit Argumenten (z.B. `-h`) oder *positional arguments* (z.B. `less datei.txt`) aufrufen kann. Will man sie schön schreiben, verwendet man das Modul `argparse`. Das Modul erzeugt dann auch automatisch eine Hilfe, die der Benutzer des Programms mit dem üblichen `-h` aufrufen kann.
 
 ```python
 #!/usr/bin/env python3
