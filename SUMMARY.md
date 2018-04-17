@@ -28,6 +28,7 @@
 	+ [print, help, input, import, type](Py_Basics.md)
 	+ [for, if else, elif, range, Dateien](Py_for.md)
 	+ [while](Py_while.md)
+	+ [...](...)
 	+ [Python auf Android](Py_Android.md)
 	+ [Graphische Oberflächen (GUIs)](Py_GUI.md)
 
