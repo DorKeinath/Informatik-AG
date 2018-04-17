@@ -41,7 +41,7 @@ Python die Programmiersprache mit der **übersichtlichsten** Struktur. Außerdem
 
 ### Tutorials und Bücher
 
-[Deutsches Python-Tutorial](http://py-tutorial-de.readthedocs.io/de/python-3.3/)
+[Deutsches Python-Tutorial](http://py-tutorial-de.readthedocs.io/de/latest/index.html)
 
 [Noch ein deutsches Python-Tutorial](http://pythonbuch.com/index.html)
 
@@ -151,7 +151,7 @@ from time import strftime
 print(strftime("%d %b %Y %H:%M:%S"))
 
 ```
-[Mehr zur Funktion `strftime`]((https://docs.python.org/2/library/time.html#time.strftime))
+([Mehr zur Funktion `strftime`](https://docs.python.org/2/library/time.html#time.strftime))
 
 ### EA: Potenz-Berechner
 Schreibe ein Python-Skript, das den Aufrufer nach einer Basis und einem Exponenten fragt und dann die Potenz berechnet und ausgibt. Hinweis: `2**3` ergibt 8.
@@ -162,6 +162,9 @@ Schreibe ein Python-Skript, das den Aufrufer nach einem Radius oder Durchmesser 
 ```python
 from math import pi
 ```
+
+### EA: Terminal-Programm (Für Fortgeschrittene)
+Mit Python kann man Bash-Skripte schreiben, die man mit Argumenten (z.B. `-h`) oder *positional arguements* (z.B. `less datei.txt`) aufrufen kann.
 
 <!-- h2 -->
 

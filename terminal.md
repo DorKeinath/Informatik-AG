@@ -41,30 +41,31 @@ Das heißt, dass man eine Option oder einen Dateinamen eingeben kann, aber nicht
 * `cd`
 * `cd ..`
 * `cd -`
+* `clear`
 * `mkdir`
 * `rmdir`
 * `touch`
+* `nano`
 * `cp`
 * `mv`
 * `rm`
-* `clear`
 * `tree`
+* `less`
 * `find`
 * `echo`
 * `firefox`
-* `cal`
+* `which`
 * `wget`
+* `curl`
+* `cal`
 * `tar`
 * `gzip`
-* `nano`
 * `vi`
 * `cat`
 * `apt`
 * `ifconfig`
-* `which`
 * `whereis`
 * `rsync`
-* `history`
 * `df -h`
 * `cat /proc/partitions`
 * `dmesg`
@@ -72,7 +73,6 @@ Das heißt, dass man eine Option oder einen Dateinamen eingeben kann, aber nicht
 ## Spielereien
 * `curl wttr.in/bretten`
 * `rev`
-* `time read`
 * `tr -c "[:digit:]" " " < /dev/urandom | dd cbs=$COLUMNS conv=unblock | GREP_COLOR="1;32" grep --color "[^ ]"`
 * `cat /dev/urandom | hexdump -C | grep "ca fe"`
 * [Freakige Befehle](https://www.commandlinefu.com/commands/browse/sort-by-votes)
@@ -86,11 +86,10 @@ Das heißt, dass man eine Option oder einen Dateinamen eingeben kann, aber nicht
 * [Aliase](https://askubuntu.com/questions/17536/how-do-i-create-a-permanent-bash-alias) über die Datei `~/.bashrc`.
 * [Dateien durchsuchen] mit `locate` oder `find`: [1](https://wiki.ubuntuusers.de/locate/), [2](https://wiki.ubuntuusers.de/find/), [3](https://www.digitalocean.com/community/tutorials/how-to-use-find-and-locate-to-search-for-files-on-a-linux-vps), [4](http://www.linfo.org/locate.html), [5](https://unix.stackexchange.com/questions/151700/how-to-add-specific-directories-to-updatedb-locate-search-path), [6](https://askubuntu.com/questions/160424/how-do-i-get-mlocate-to-only-index-certain-directories)
 
-
 ## Weitere Beispiele
 * `sudo pm-hibernate`
 * `find \( -iname '*.jpg' -or -iname '*.jpeg' -or -iname '*.gif' -or -iname '*.png' -or -iname '*.bmp' \) |  wc -l`
-* `ls -1 *.jpg | parallel -j 3 convert '{}' -resize 1920x -quality 60 '{}_1920px'`
+* `ls -1 *.jpg | parallel -j 3 convert '{}' -resize 1920x -quality 60 '{/}_1920px.jpg'`
 * [http://www.shellbefehle.de/bash-tipps/](http://www.shellbefehle.de/bash-tipps/)
 
 ## Security mit dem Terminal
