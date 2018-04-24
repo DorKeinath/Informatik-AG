@@ -54,6 +54,7 @@ Das heißt, dass man eine Option oder einen Dateinamen eingeben kann, aber nicht
 * `find`
 * `echo`
 * `firefox`
+* `firefox & disown`
 * `which`
 * `wget`
 * `curl`
