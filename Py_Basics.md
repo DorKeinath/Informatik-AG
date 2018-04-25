@@ -2,7 +2,7 @@
 
 <!-- MDTOC maxdepth:6 firsth1:2 numbering:0 flatten:0 bullets:1 updateOnSave:1 -->
 
-- [Python-Konsole, Python-Skripte, print, help, input, import, type](#python-konsole-python-skripte-print-help-input-import-type)   
+- [Python-Basics](#python-basics)   
    - [Python-Konsole](#python-konsole)   
    - [help](#help)   
    - [print, input](#print-input)   
@@ -17,7 +17,7 @@
 
 <!-- /MDTOC -->
 
-## Python-Konsole, Python-Skripte, print, help, input, import, type
+## Python-Basics
 
 Mit Python kann man Computerprogramme schreiben. Ein Programm ist der Text, der der dummen Hardware sagt, was sie tun soll. Also zum Beispiel soll der Bildschirm "Hallo" schreiben. Das Programm ist dabei nicht nur Code, sondern besteht quasi aus Gedanken.
 

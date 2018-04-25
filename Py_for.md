@@ -3,7 +3,7 @@
 <!-- MDTOC maxdepth:3 firsth1:2 numbering:0 flatten:0 bullets:1 updateOnSave:1 -->
 
 - [for, if else, elif, range, Dateien](#for-if-else-elif-range-dateien)   
-   - [for](#for)   
+   - [range, for](#range-for)   
    - [if-else](#if-else)   
 - [Arbeitsaufträge](#arbeitsaufträge)   
    - [Nerv-Virus](#nerv-virus)   
@@ -15,7 +15,7 @@
 
 ## for, if else, elif, range, Dateien
 
-### for
+### range, for
 
 ```python
 for i in range(10):
