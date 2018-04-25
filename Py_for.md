@@ -1,8 +1,24 @@
 # Python
 
+<!-- MDTOC maxdepth:4 firsth1:3 numbering:0 flatten:0 bullets:1 updateOnSave:1 -->
+
+- [for, if else, elif, range, Dateien](#for-if-else-elif-range-dateien)   
+      - [sdas](#sdas)   
+   - [for](#for)   
+   - [if-else](#if-else)   
+   - [EA: Nerv-Virus](#ea-nerv-virus)   
+   - [EA: Passwortabfrage](#ea-passwortabfrage)   
+   - [EA: Passwortvirus](#ea-passwortvirus)   
+   - [EA: BMI](#ea-bmi)   
+
+<!-- /MDTOC -->
+
 ## for, if else, elif, range, Dateien
 
-### PL: for
+teste2wer
+#### sdas
+
+### for
 
 ```python
 for i in range(10):
@@ -12,7 +28,7 @@ for i in range(10):
 `range(10)` entspricht `[0,1,2,3,4,5,6,7,8,9]`
 Was das `end=""` bewirkt, kannst du selbst herausfinden: lösche und vergleiche.
 
-### PL: if-else
+### if-else
 
 ```python
 zahl = input("Gib bitte eine natürliche Zahl ein: ")
