@@ -23,6 +23,10 @@ else:
     print("Deine Zahl ist gerade.")
 ```
 
+### EA: Nerv-Virus
+Schreibe ein Programm, bei dessen Aufruf nervig viele Fenster eines Programms geöffnet werden.
+Tipp: [`subprocess`](), [`disown`](terminal.md)
+
 ### EA: Passwortabfrage
 Lass dir einen Namen und ein Passwort geben. Wenn beides deine Daten sind, gib "Herzlich willkommen!" aus. Falls die Daten nicht mit deinen Daten übereinstimmen gibt eine Fehlermeldung aus.
 

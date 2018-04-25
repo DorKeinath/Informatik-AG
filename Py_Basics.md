@@ -2,6 +2,17 @@
 
 ## Python-Console und -Skripte, print, help, input, import, type
 
+<!-- MDTOC maxdepth:2 firsth1:3 numbering:0 flatten:0 bullets:1 updateOnSave:1 -->
+
+- [Python-Console und -Skripte, print, help, input, import, type](#python-console-und-skripte-print-help-input-import-type)   
+   - [PL: Basics](#pl-basics)   
+   - [EA: Begrüßung](#ea-begrüßung)   
+   - [EA: Potenz-Berechner](#ea-potenz-berechner)   
+   - [EA: Kreis-Berechner](#ea-kreis-berechner)   
+   - [EA: Terminal-Programm (Für Fortgeschrittene)](#ea-terminal-programm-für-fortgeschrittene)   
+
+<!-- /MDTOC -->
+
 ### PL: Basics
 
 Mit Python kann man Computerprogramme schreiben. Ein Programm ist der Text, der der dummen Hardware sagt, was sie tun soll. Also zum Beispiel soll der Bildschirm "Hallo" schreiben. Das Programm ist dabei nicht nur Code, sondern besteht quasi aus Gedanken.
