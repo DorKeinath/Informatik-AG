@@ -45,7 +45,7 @@ geheim.close()
 
 [Weitere Informationen zum Umgang mit Dateien](https://www.tutorialspoint.com/python/python_files_io.htm)
 
-Erweiterung: Lies mit dem [os-Modul]((https://docs.python.org/2/library/os.html)) heimlich Daten des Benutzers aus und schreibe sie auch in die Datei.
+Erweiterung: Lies mit dem [`subprocess`]()-Modul heimlich Daten des Benutzers aus und schreibe sie auch in die Datei.
 
 ### EA: BMI
 Gib den [Body-Mass-Index](https://de.wikipedia.org/wiki/Body-Mass-Index#Berechnung) einer Person aus, indem du sie vorher nach den nötigen Variablen fragst.

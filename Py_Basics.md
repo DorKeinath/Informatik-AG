@@ -2,10 +2,16 @@
 
 ## Python-Console und -Skripte, print, help, input, import, type
 
-<!-- MDTOC maxdepth:2 firsth1:3 numbering:0 flatten:0 bullets:1 updateOnSave:1 -->
+<!-- MDTOC maxdepth:3 firsth1:3 numbering:0 flatten:0 bullets:1 updateOnSave:1 -->
 
 - [Python-Console und -Skripte, print, help, input, import, type](#python-console-und-skripte-print-help-input-import-type)   
    - [PL: Basics](#pl-basics)   
+      - [Python-Konsole](#python-konsole)   
+      - [help](#help)   
+   - [print, input](#print-input)   
+   - [import, asctime, subprocess](#import-asctime-subprocess)   
+      - [Python-Skript](#python-skript)   
+      - [Typen](#typen)   
    - [EA: Begrüßung](#ea-begrüßung)   
    - [EA: Potenz-Berechner](#ea-potenz-berechner)   
    - [EA: Kreis-Berechner](#ea-kreis-berechner)   
@@ -17,23 +23,32 @@
 
 Mit Python kann man Computerprogramme schreiben. Ein Programm ist der Text, der der dummen Hardware sagt, was sie tun soll. Also zum Beispiel soll der Bildschirm "Hallo" schreiben. Das Programm ist dabei nicht nur Code, sondern besteht quasi aus Gedanken.
 
-**Python-Console** starten mit `python` oder `python3` und sie beenden mit Strg+D. Den Bildschirm leeren geht mit Strg+L.
+#### Python-Konsole
+
+**Python-Konsole** starten mit `python` oder `python3` und sie beenden mit Strg+D. Den Bildschirm leeren geht mit Strg+L.
 
 `python3`
 
 `print('Hallo Welt!')`
 
+#### help
+
 **Hilfe** zu vorhandenen Funktionen erhält man mit `help()`. Beenden der Hilfe mit `q`.
 
 `help(len)`
 
-**Ausgeben und Abfragen**
+### print, input
+
+So schreibt man etwas:
 
 `print('Dor' + 'Keinath')`
 `print(1000*'DorKeinath ')`
 
+So liest man einen Text in die Variable a ein:
+
 `a = input('Gib etwas ein:')`
 
+### import, asctime, subprocess
 
 **Importieren** weiterer Funktionen aus noch nicht geladenen Pakten
 
@@ -58,6 +73,8 @@ call("clear")
 
 (Früher hat man `from os import system` und `system("clear")` oder `os.popen` verwendet. Weitere Informationen zu [subprocess](http://www.admin-magazin.de/Das-Heft/2012/05/Kommandos-mit-dem-Subprocess-Modul-aufrufen), [weitere Methoden](https://stackoverflow.com/questions/89228/calling-an-external-command-in-python/92395#92395) Terminal-Befehle durch Python auszuführen.)
 
+#### Python-Skript
+
 Ein ganzes **Python-Skript** bzw. **Python-Programm** test.py schreiben und mit `python3 test.py` (oder - falls das Shabang vorhanden ist - mit `./test.py`) starten.
 
 ```python
@@ -66,6 +83,8 @@ Ein ganzes **Python-Skript** bzw. **Python-Programm** test.py schreiben und mit 
 name = input('Wie heißt du? ')
 print('Hallo ' + name + '!')
 ```
+
+#### Typen
 
 **Typen** benötigen manchmal besondere Aufmerksamkeit: Versuche, die Summe aus zwei abgefragten Zahlen ausgeben zu lassen.
 
