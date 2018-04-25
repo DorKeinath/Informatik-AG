@@ -1,22 +1,19 @@
 # Python
 
-<!-- MDTOC maxdepth:4 firsth1:3 numbering:0 flatten:0 bullets:1 updateOnSave:1 -->
+<!-- MDTOC maxdepth:3 firsth1:2 numbering:0 flatten:0 bullets:1 updateOnSave:1 -->
 
 - [for, if else, elif, range, Dateien](#for-if-else-elif-range-dateien)   
-      - [sdas](#sdas)   
    - [for](#for)   
    - [if-else](#if-else)   
-   - [EA: Nerv-Virus](#ea-nerv-virus)   
-   - [EA: Passwortabfrage](#ea-passwortabfrage)   
-   - [EA: Passwortvirus](#ea-passwortvirus)   
-   - [EA: BMI](#ea-bmi)   
+- [Arbeitsaufträge](#arbeitsaufträge)   
+   - [Nerv-Virus](#nerv-virus)   
+   - [Passwortabfrage](#passwortabfrage)   
+   - [Passwortvirus](#passwortvirus)   
+   - [BMI-Rechner](#bmi-rechner)   
 
 <!-- /MDTOC -->
 
 ## for, if else, elif, range, Dateien
-
-teste2wer
-#### sdas
 
 ### for
 
@@ -39,14 +36,16 @@ else:
     print("Deine Zahl ist gerade.")
 ```
 
-### EA: Nerv-Virus
-Schreibe ein Programm, bei dessen Aufruf nervig viele Fenster eines Programms geöffnet werden.
-Tipp: [`subprocess`](#import-asctime-subprocess), [`disown`](terminal.md)
+## Arbeitsaufträge
 
-### EA: Passwortabfrage
+### Nerv-Virus
+Schreibe ein Programm, bei dessen Aufruf nervig viele Fenster eines Programms geöffnet werden.
+Tipp: [`subprocess`](Py_Basics.md#import-asctime-subprocess), [`disown`](terminal.md)
+
+### Passwortabfrage
 Lass dir einen Namen und ein Passwort geben. Wenn beides deine Daten sind, gib "Herzlich willkommen!" aus. Falls die Daten nicht mit deinen Daten übereinstimmen gibt eine Fehlermeldung aus.
 
-### EA: Passwortvirus
+### Passwortvirus
 Verändere die Passwortabfrage zu einem Virus, der heimlich die eingegebenen Namen und das versuchten Passwörter der Benutzer speichert. So schreibst du in eine Datei:
 
 ```python
@@ -63,7 +62,7 @@ geheim.close()
 
 Erweiterung: Lies mit dem [`subprocess`]()-Modul heimlich Daten des Benutzers aus und schreibe sie auch in die Datei.
 
-### EA: BMI
+### BMI-Rechner
 Gib den [Body-Mass-Index](https://de.wikipedia.org/wiki/Body-Mass-Index#Berechnung) einer Person aus, indem du sie vorher nach den nötigen Variablen fragst.
 
 Ergänze das BMI-Skript dann durch die Interpretation des Body-Mass-Indexes bzgl. Unter-, Normal- und Übergewicht. Man kann übrigens if-Anweisungen auch verschachteln. Und außerdem gibt noch `elif`.
