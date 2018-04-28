@@ -30,7 +30,8 @@
 	+ [while](Py_while.md)
 	+ [Funktionen](Py_Funktionen.md)
 	+ [...](...)
-		+ [Terminal-Skripte](Py_Terminal.md)
+	+ [Terminal-Skripte](Py_Terminal.md)
+	+ [E-Mails versenden](Py_E-Mails.md)
 	+ [Python auf Android](Py_Android.md)
 	+ [Graphische Oberflächen (GUIs)](Py_GUI.md)
 
